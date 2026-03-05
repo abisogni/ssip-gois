@@ -66,8 +66,8 @@ const PricingSection = () => {
                   </li>
                 ))}
               </ul>
-              <Button className={`w-full font-display tracking-wider ${tier.btnClass}`}>
-                Register
+              <Button className={`w-full font-display tracking-wider ${tier.btnClass}`} asChild>
+                <a href="mailto:contact@ssip-pl.ch">Register</a>
               </Button>
             </div>
           ))}
