@@ -13,7 +13,7 @@ const tiers = [
       "Parallel Executive Dialogues & Bilateral Meetings",
       "Facilitated closed-door discussions, bilateral meetings and ecosystem alignment among invited participants (under NDA)",
     ],
-    cardBg: "bg-gradient-to-br from-[hsl(220,10%,70%)] via-[hsl(215,15%,80%)] to-[hsl(210,12%,88%)] text-slate-900 border border-[hsl(220,15%,75%)]/60 shadow-xl",
+    cardBg: "bg-gradient-to-br from-[hsl(220,8%,78%)] via-[hsl(220,12%,86%)] to-[hsl(215,10%,92%)] text-slate-900 border border-[hsl(220,10%,80%)]/60 shadow-xl",
     btnClass: "bg-slate-800 text-white hover:bg-slate-700",
   },
   {
@@ -36,7 +36,7 @@ const tiers = [
     features: [
       "Access to 1-day Summit (25th)",
     ],
-    cardBg: "bg-gradient-to-br from-[hsl(0,0%,72%)] to-[hsl(0,0%,82%)] text-gray-900 border border-gray-400/50",
+    cardBg: "bg-gradient-to-br from-[hsl(0,0%,62%)] via-[hsl(0,0%,68%)] to-[hsl(0,0%,58%)] text-white border border-[hsl(0,0%,55%)]/50 shadow-lg",
     btnClass: "bg-gray-700 text-white hover:bg-gray-600",
   },
 ];
