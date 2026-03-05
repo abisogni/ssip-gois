@@ -1,38 +1,30 @@
 import heroImage from "@/assets/hero-space.jpg";
 import ssipLogo from "@/assets/ssip-logo.png";
-import orbitalStation from "@/assets/orbital-station.png";
-import orbitalStation3 from "@/assets/orbital-station-3.png";
-import rocket from "@/assets/rocket.png";
+import realStation1 from "@/assets/real-station-1.png";
+import realStation2 from "@/assets/real-station-2.png";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with Earth rotating together with orbital stations */}
+      {/* Background with Earth rotating */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
         <div className="relative animate-spin-slow" style={{ width: '325%', height: '325%' }}>
           <img src={heroImage} alt="Space orbital infrastructure" className="absolute inset-0 w-full h-full object-cover" />
-          <img
-            src={orbitalStation}
-            alt=""
-            className="absolute top-[15%] right-[18%] w-12 md:w-24 opacity-70"
-          />
         </div>
       </div>
       <div className="absolute inset-0 hero-overlay" />
 
-      {/* New orbital station - top left */}
+      {/* Realistic orbital stations */}
       <img
-        src={orbitalStation3}
+        src={realStation1}
         alt=""
-        className="absolute top-[8%] left-[5%] md:top-[12%] md:left-[8%] w-20 md:w-36 opacity-50 animate-orbit-slow pointer-events-none select-none"
+        className="absolute top-[10%] right-[5%] md:top-[14%] md:right-[10%] w-24 md:w-40 opacity-70 animate-orbit-slow pointer-events-none select-none"
       />
-
-      {/* Rocket flying toward the station */}
       <img
-        src={rocket}
+        src={realStation2}
         alt=""
-        className="absolute bottom-[30%] right-[15%] md:bottom-[35%] md:right-[10%] w-10 md:w-20 opacity-70 animate-rocket pointer-events-none select-none"
+        className="absolute bottom-[18%] left-[3%] md:bottom-[22%] md:left-[8%] w-20 md:w-32 opacity-55 animate-orbit-reverse pointer-events-none select-none"
       />
 
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
