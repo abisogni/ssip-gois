@@ -1,0 +1,41 @@
+import heroImage from "@/assets/hero-space.jpg";
+import { Button } from "@/components/ui/button";
+
+const HeroSection = () => {
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <div className="absolute inset-0">
+        <img src={heroImage} alt="Space orbital infrastructure" className="w-full h-full object-cover" />
+        <div className="hero-overlay absolute inset-0" />
+      </div>
+
+      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
+        <p className="text-primary font-display text-sm tracking-[0.3em] uppercase mb-4 animate-pulse-glow">
+          Global Orbital Infrastructure Summit
+        </p>
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 glow-text leading-tight">
+          GOIS <span className="text-primary">2026</span>
+        </h1>
+        <p className="text-lg md:text-2xl font-light text-foreground/80 mb-2 max-w-3xl mx-auto">
+          Uniting Innovators, Shaping the Future of Orbital Infrastructure
+        </p>
+        <p className="text-muted-foreground text-base md:text-lg mb-4">
+          Organized by <span className="text-primary font-semibold">SSIP</span> — Space Systems Innovation Platform
+        </p>
+        <div className="flex items-center justify-center gap-2 text-muted-foreground mb-10 font-display text-sm tracking-wider">
+          <span>June 24–25, 2026</span>
+          <span className="text-primary">|</span>
+          <span>Lisbon, Portugal</span>
+        </div>
+        <Button
+          size="lg"
+          className="gradient-primary text-primary-foreground font-display tracking-wider text-sm px-10 py-6 rounded-full glow-border hover:scale-105 transition-transform"
+        >
+          Pre-Register Now
+        </Button>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
