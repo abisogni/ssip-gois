@@ -1,32 +1,23 @@
 import heroImage from "@/assets/hero-space.jpg";
 import ssipLogo from "@/assets/ssip-logo.png";
 import orbitalStation from "@/assets/orbital-station.png";
-import planetEarth from "@/assets/planet-earth.png";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0">
-        <img src={heroImage} alt="Space orbital infrastructure" className="w-full h-full object-cover" />
-        <div className="hero-overlay absolute inset-0" />
-      </div>
-
-      {/* Earth centered behind content */}
+      {/* Background with Earth rotating together with orbital stations */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-        <img
-          src={planetEarth}
-          alt=""
-          className="w-[20rem] md:w-[32rem] lg:w-[40rem] opacity-50 animate-spin-slow"
-        />
+        <div className="relative w-[140%] h-[140%] animate-spin-slow">
+          <img src={heroImage} alt="Space orbital infrastructure" className="absolute inset-0 w-full h-full object-cover" />
+          <img
+            src={orbitalStation}
+            alt=""
+            className="absolute top-[15%] right-[18%] w-12 md:w-24 opacity-70"
+          />
+        </div>
       </div>
-
-      {/* Orbital station floating */}
-      <img
-        src={orbitalStation}
-        alt=""
-        className="absolute top-[18%] right-[8%] md:top-[22%] md:right-[12%] w-16 md:w-28 opacity-60 animate-orbit-slow pointer-events-none select-none"
-      />
+      <div className="absolute inset-0 hero-overlay" />
 
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
         <img src={ssipLogo} alt="SSIP Logo" className="w-20 h-20 mx-auto mb-6" />
