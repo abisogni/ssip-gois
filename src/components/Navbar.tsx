@@ -21,8 +21,8 @@ const Navbar = () => {
               {l}
             </a>
           ))}
-          <Button size="sm" className="gradient-primary text-primary-foreground font-display text-xs tracking-wider rounded-full px-6">
-            Pre-Register
+          <Button size="sm" className="gradient-primary text-primary-foreground font-display text-xs tracking-wider rounded-full px-6" asChild>
+            <a href="mailto:contact@ssip-pl.ch">Pre-Register</a>
           </Button>
         </div>
         <button className="md:hidden text-foreground" onClick={() => setOpen(!open)}>
@@ -36,8 +36,8 @@ const Navbar = () => {
               {l}
             </a>
           ))}
-          <Button size="sm" className="gradient-primary text-primary-foreground font-display text-xs tracking-wider rounded-full w-full">
-            Pre-Register
+          <Button size="sm" className="gradient-primary text-primary-foreground font-display text-xs tracking-wider rounded-full w-full" asChild>
+            <a href="mailto:contact@ssip-pl.ch">Pre-Register</a>
           </Button>
         </div>
       )}

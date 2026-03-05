@@ -37,8 +37,9 @@ const HeroSection = () => {
           <Button
             size="lg"
             className="gradient-primary text-primary-foreground font-display tracking-wider text-sm px-10 py-6 rounded-full glow-border hover:scale-105 transition-transform"
+            asChild
           >
-            Pre-Register Now
+            <a href="mailto:contact@ssip-pl.ch">Pre-Register Now</a>
           </Button>
           <Button
             size="lg"
