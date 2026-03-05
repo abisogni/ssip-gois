@@ -1,6 +1,8 @@
 import heroImage from "@/assets/hero-space.jpg";
 import ssipLogo from "@/assets/ssip-logo.png";
 import orbitalStation from "@/assets/orbital-station.png";
+import orbitalStation3 from "@/assets/orbital-station-3.png";
+import rocket from "@/assets/rocket.png";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
@@ -18,6 +20,20 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="absolute inset-0 hero-overlay" />
+
+      {/* New orbital station - top left */}
+      <img
+        src={orbitalStation3}
+        alt=""
+        className="absolute top-[8%] left-[5%] md:top-[12%] md:left-[8%] w-20 md:w-36 opacity-50 animate-orbit-slow pointer-events-none select-none"
+      />
+
+      {/* Rocket flying toward the station */}
+      <img
+        src={rocket}
+        alt=""
+        className="absolute bottom-[30%] right-[15%] md:bottom-[35%] md:right-[10%] w-10 md:w-20 opacity-70 animate-rocket pointer-events-none select-none"
+      />
 
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
         <img src={ssipLogo} alt="SSIP Logo" className="w-20 h-20 mx-auto mb-6" />
