@@ -1,4 +1,5 @@
 import heroImage from "@/assets/hero-space.jpg";
+import ssipLogo from "@/assets/ssip-logo.png";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
@@ -10,11 +11,12 @@ const HeroSection = () => {
       </div>
 
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
+        <img src={ssipLogo} alt="SSIP Logo" className="w-20 h-20 mx-auto mb-6" />
         <p className="text-primary font-display text-sm tracking-[0.3em] uppercase mb-4 animate-pulse-glow">
-          Global Orbital Infrastructure Summit
+          Organized by SSIP — Space Systems Innovation Platform
         </p>
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 glow-text leading-tight">
-          GOIS <span className="text-primary">2026</span>
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-bold mb-6 glow-text leading-tight">
+          Global Orbital Infrastructure <span className="text-primary">Summit 2026</span>
         </h1>
         <p className="text-lg md:text-2xl font-light text-foreground/80 mb-2 max-w-3xl mx-auto">
           Uniting Innovators, Shaping the Future of Orbital Infrastructure
