@@ -13,7 +13,7 @@ const tiers = [
       "Parallel Executive Dialogues & Bilateral Meetings",
       "Facilitated closed-door discussions, bilateral meetings and ecosystem alignment among invited participants (under NDA)",
     ],
-    cardBg: "bg-gradient-to-br from-[hsl(210,15%,82%)] to-[hsl(210,20%,92%)] text-slate-900 border border-slate-300/50",
+    cardBg: "bg-gradient-to-br from-[hsl(220,10%,70%)] via-[hsl(215,15%,80%)] to-[hsl(210,12%,88%)] text-slate-900 border border-[hsl(220,15%,75%)]/60 shadow-xl",
     btnClass: "bg-slate-800 text-white hover:bg-slate-700",
   },
   {
