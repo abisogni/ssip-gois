@@ -135,7 +135,7 @@
 }
 
 .animate-spin-slow {
-  animation: spin-slow 60s linear infinite;
+  animation: spin-slow 180s linear infinite;
 }
 
 @keyframes rocket-fly {
