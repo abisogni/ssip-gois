@@ -3,27 +3,37 @@ import { Check } from "lucide-react";
 
 const tiers = [
   {
-    name: "GOIS Standard",
-    date: "June 24–25, 2026",
-    location: "Lisbon, Portugal",
-    price: "1,480€",
-    features: ["Access to the full conference", "Access to social events", "Access to the exhibition area"],
-    highlight: false,
-  },
-  {
-    name: "GOIS Government / Military",
-    date: "June 24–25, 2026",
-    location: "Lisbon, Portugal",
-    price: "680€",
-    features: ["Access to the full conference", "Access to social events", "Access to the exhibition area"],
+    name: "2-Day Full Access",
+    duration: "June 24–25",
+    price: "1,750 CHF",
+    features: [
+      "Access to the full Summit",
+      "Access to Social Events (Exclusive Dinner, Visits 24th)",
+      "Closed Strategy Sessions",
+      "Parallel Executive Dialogues & Bilateral Meetings",
+      "Facilitated closed-door discussions, bilateral meetings and ecosystem alignment among invited participants (under NDA)",
+    ],
     highlight: true,
   },
   {
-    name: "GOIS VIP & Partners",
-    date: "June 24–25, 2026",
-    location: "Lisbon, Portugal",
-    price: "Upon Request",
-    features: ["Priority seating & VIP lounge", "Exclusive networking dinner", "Access to all conference areas"],
+    name: "1-Day Summit",
+    duration: "June 25",
+    price: "750 CHF",
+    features: [
+      "Access to 1-day Summit (25th)",
+    ],
+    highlight: false,
+  },
+  {
+    name: "1-Day Full Access",
+    duration: "June 25",
+    price: "1,200 CHF",
+    features: [
+      "Access to 1-day Summit (25th)",
+      "Closed Strategy Sessions",
+      "Parallel Executive Dialogues & Bilateral Meetings",
+      "Facilitated closed-door discussions, bilateral meetings and ecosystem alignment among invited participants",
+    ],
     highlight: false,
   },
 ];
@@ -47,11 +57,8 @@ const PricingSection = () => {
               }`}
             >
               <h3 className="font-display text-lg font-bold mb-1">{tier.name}</h3>
-              <p className={`text-sm mb-1 ${tier.highlight ? "text-primary-foreground/80" : "text-muted-foreground"}`}>
-                {tier.date}
-              </p>
               <p className={`text-sm mb-6 ${tier.highlight ? "text-primary-foreground/80" : "text-muted-foreground"}`}>
-                {tier.location}
+                {tier.duration}
               </p>
               <p className="text-3xl font-display font-bold mb-8">{tier.price}</p>
               <ul className="space-y-3 mb-8 flex-1">
