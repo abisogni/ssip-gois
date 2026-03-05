@@ -10,7 +10,7 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with Earth rotating together with orbital stations */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-        <div className="relative w-[140%] h-[140%] animate-spin-slow">
+        <div className="relative w-[200%] h-[200%] animate-spin-slow">
           <img src={heroImage} alt="Space orbital infrastructure" className="absolute inset-0 w-full h-full object-cover" />
           <img
             src={orbitalStation}
