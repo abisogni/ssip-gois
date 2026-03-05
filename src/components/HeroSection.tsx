@@ -1,7 +1,6 @@
 import heroImage from "@/assets/hero-space.jpg";
 import ssipLogo from "@/assets/ssip-logo.png";
 import orbitalStation from "@/assets/orbital-station.png";
-import orbitalStation2 from "@/assets/orbital-station-2.png";
 import planetEarth from "@/assets/planet-earth.png";
 import { Button } from "@/components/ui/button";
 
@@ -18,20 +17,15 @@ const HeroSection = () => {
         <img
           src={planetEarth}
           alt=""
-          className="w-64 md:w-96 lg:w-[28rem] opacity-30 animate-spin-slow"
+          className="w-[20rem] md:w-[32rem] lg:w-[40rem] opacity-50 animate-spin-slow"
         />
       </div>
 
-      {/* Orbital stations floating around */}
+      {/* Orbital station floating */}
       <img
         src={orbitalStation}
         alt=""
         className="absolute top-[18%] right-[8%] md:top-[22%] md:right-[12%] w-16 md:w-28 opacity-60 animate-orbit-slow pointer-events-none select-none"
-      />
-      <img
-        src={orbitalStation2}
-        alt=""
-        className="absolute bottom-[22%] left-[6%] md:bottom-[25%] md:left-[10%] w-14 md:w-24 opacity-50 animate-orbit-reverse pointer-events-none select-none"
       />
 
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
