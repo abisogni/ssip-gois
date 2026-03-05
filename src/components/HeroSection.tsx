@@ -23,16 +23,27 @@ const HeroSection = () => {
           Organized by <span className="text-primary font-semibold">SSIP</span> — Space Systems Innovation Platform
         </p>
         <div className="flex items-center justify-center gap-2 text-muted-foreground mb-10 font-display text-sm tracking-wider">
+          <span>🇨🇭</span>
           <span>June 24–25, 2026</span>
           <span className="text-primary">|</span>
-          <span>Lisbon, Portugal</span>
+          <span>Switzerland</span>
         </div>
-        <Button
-          size="lg"
-          className="gradient-primary text-primary-foreground font-display tracking-wider text-sm px-10 py-6 rounded-full glow-border hover:scale-105 transition-transform"
-        >
-          Pre-Register Now
-        </Button>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <Button
+            size="lg"
+            className="gradient-primary text-primary-foreground font-display tracking-wider text-sm px-10 py-6 rounded-full glow-border hover:scale-105 transition-transform"
+          >
+            Pre-Register Now
+          </Button>
+          <Button
+            size="lg"
+            variant="outline"
+            className="font-display tracking-wider text-sm px-10 py-6 rounded-full border-primary/40 text-primary hover:bg-primary/10 transition-all"
+            asChild
+          >
+            <a href="mailto:contact@ssip-pl.ch">Contact Us</a>
+          </Button>
+        </div>
       </div>
     </section>
   );

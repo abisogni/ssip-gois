@@ -1,12 +1,11 @@
-import { Satellite, Shield, Globe, Rocket, Cpu, Users } from "lucide-react";
+import { Factory, Rocket, FlaskConical, Landmark, Microscope } from "lucide-react";
 
 const themes = [
-  { icon: Satellite, title: "Mega-Constellations & Connectivity", desc: "Next-gen satellite networks and global broadband infrastructure." },
-  { icon: Shield, title: "Space Sustainability & Debris", desc: "Active debris removal, space traffic management, and long-term sustainability." },
-  { icon: Globe, title: "In-Orbit Servicing & Manufacturing", desc: "Refueling, assembly, and manufacturing capabilities in orbit." },
-  { icon: Rocket, title: "Launch & Access to Space", desc: "Reusable launch systems and emerging spaceports worldwide." },
-  { icon: Cpu, title: "AI & Autonomous Systems", desc: "Machine learning and autonomy for orbital operations and decision-making." },
-  { icon: Users, title: "Policy & International Cooperation", desc: "Regulatory frameworks, spectrum management, and multilateral governance." },
+  { icon: Landmark, title: "Commercial Space Stations & Orbital Platforms", desc: "The next generation of habitable and operational platforms in low Earth orbit and beyond." },
+  { icon: Rocket, title: "Launch Systems & Orbital Logistics", desc: "Reusable launch vehicles, in-space transportation, and supply chain solutions for orbit." },
+  { icon: Factory, title: "In-Orbit Manufacturing & Microgravity R&D", desc: "Leveraging the unique conditions of space for advanced manufacturing and research." },
+  { icon: Microscope, title: "Life Sciences in Microgravity", desc: "Biomedical research, pharmaceutical development, and human health in space environments." },
+  { icon: FlaskConical, title: "Infrastructure Investment for Space", desc: "Financing models, public-private partnerships, and capital flows enabling orbital infrastructure." },
 ];
 
 const ThemesSection = () => {
@@ -14,16 +13,16 @@ const ThemesSection = () => {
     <section className="py-24 px-4">
       <div className="container max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-4">
-          Key <span className="text-primary">Themes</span>
+          Summit <span className="text-primary">Focus Areas</span>
         </h2>
         <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-16">
-          Exploring the most pressing topics shaping orbital infrastructure and space innovation.
+          A focused, high-signal gathering on the critical pillars of orbital infrastructure.
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {themes.map((theme) => (
             <div key={theme.title} className="glass-panel rounded-xl p-6 hover:glow-border transition-all duration-300 group">
               <theme.icon className="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition-transform" />
-              <h3 className="font-display text-lg font-semibold mb-2 text-foreground">{theme.title}</h3>
+              <h3 className="font-display text-base font-semibold mb-2 text-foreground">{theme.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">{theme.desc}</p>
             </div>
           ))}

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
-const links = ["About", "Themes", "Speakers", "Attend", "Partners"];
+const links = ["About", "Agenda", "Themes", "Attend", "Contact"];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);

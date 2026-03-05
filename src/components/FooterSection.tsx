@@ -8,10 +8,12 @@ const FooterSection = () => {
         <p className="text-muted-foreground text-sm">
           Connecting the orbital infrastructure community worldwide.
         </p>
+        <p className="text-muted-foreground text-sm">
+          📩 <a href="mailto:contact@ssip-pl.ch" className="text-primary hover:underline">contact@ssip-pl.ch</a>
+        </p>
         <div className="flex justify-center gap-6 text-muted-foreground text-sm">
           <a href="#" className="hover:text-primary transition-colors">LinkedIn</a>
           <a href="#" className="hover:text-primary transition-colors">Twitter / X</a>
-          <a href="#" className="hover:text-primary transition-colors">Contact</a>
         </div>
         <p className="text-muted-foreground/50 text-xs pt-4">© SSIP 2026. All rights reserved.</p>
       </div>
