@@ -24,11 +24,14 @@ const HeroSection = () => {
         <p className="text-muted-foreground text-base md:text-lg mb-4">
           Organized by <span className="text-primary font-semibold">SSIP</span> — Space Systems Innovation Platform
         </p>
-        <div className="flex items-center justify-center gap-2 text-muted-foreground mb-10 font-display text-sm tracking-wider">
-          <span>🇨🇭</span>
-          <span>June 24–25, 2026</span>
-          <span className="text-primary">|</span>
-          <span>Switzerland</span>
+        <div className="flex flex-col items-center justify-center gap-1 text-muted-foreground mb-10 font-display text-sm tracking-wider">
+          <div className="flex items-center gap-2">
+            <span>🇨🇭</span>
+            <span>June 24–25, 2026</span>
+            <span className="text-primary">|</span>
+            <span>Technopark Luzern, Switzerland</span>
+          </div>
+          <span className="text-xs text-muted-foreground/70">In collaboration with HSLU</span>
         </div>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button
