@@ -11,11 +11,11 @@ const CTASection = () => {
             Interested in <span className="text-primary">Speaking or Participating?</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-4 leading-relaxed">
-            If your team is working on stations/platforms, launch & logistics, in-orbit manufacturing,
-            microgravity life sciences, or enabling infrastructure — we would be delighted to host you in Switzerland.
+            GOIS is a curated international summit bringing together decision-makers across the global space economy. If your organization is advancing commercial space stations, launch & logistics, in-orbit manufacturing,
+            microgravity research, or enabling infrastructure — we would be delighted to welcome you in Switzerland.
           </p>
           <p className="text-muted-foreground mb-8 text-sm">
-            We are welcoming leading organizations and speakers building the future of orbital infrastructure across the United States, Europe, and Asia.
+            We are welcoming leading organizations and speakers shaping the future of orbital infrastructure across the United States, Europe, and Asia.
           </p>
           <Button
             size="lg"
