@@ -87,9 +87,9 @@ const RegistrationFormDialog = ({ open, onOpenChange }: RegistrationFormDialogPr
   });
 
   const onSubmit = (data: FormValues) => {
-    const subject = encodeURIComponent("GOIS 2026 — Attendance Application");
+    const subject = encodeURIComponent("GOIS 2026: Attendance Application");
     const body = encodeURIComponent(
-      `GOIS 2026 — Attendance Application\n\n` +
+      `GOIS 2026: Attendance Application\n\n` +
       `First Name: ${data.firstName}\n` +
       `Last Name: ${data.lastName}\n` +
       `Email: ${data.email}\n` +
