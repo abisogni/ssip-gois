@@ -3,7 +3,7 @@ const FooterSection = () => {
     <footer className="py-12 px-4 border-t border-border/30">
       <div className="container max-w-5xl text-center space-y-4">
         <p className="text-muted-foreground text-sm italic mb-6">
-          Building the next industrial frontier beyond Earth — together.
+          Building the next industrial frontier beyond Earth, together.
         </p>
         <p className="font-display text-lg font-bold">
           <span className="text-primary">SSIP</span> — Space Systems Innovation Platform
