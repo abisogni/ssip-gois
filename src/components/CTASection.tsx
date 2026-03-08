@@ -17,16 +17,18 @@ const CTASection = () => {
           <p className="text-muted-foreground mb-8 text-sm">
             We are welcoming leading organizations and speakers shaping the future of orbital infrastructure across the United States, Europe, and Asia.
           </p>
-          <Button
-            size="lg"
-            className="gradient-primary text-primary-foreground font-display tracking-wider text-sm px-10 py-6 rounded-full glow-border hover:scale-105 transition-transform"
-            asChild
-          >
-            <a href="mailto:contact@ssip-pl.ch">
-              <Mail className="w-4 h-4 mr-2" />
-              contact@ssip-pl.ch
-            </a>
-          </Button>
+          <div className="flex justify-center">
+            <Button
+              size="lg"
+              className="gradient-primary text-primary-foreground font-display tracking-wider text-sm px-10 py-6 rounded-full glow-border hover:scale-105 transition-transform"
+              asChild
+            >
+              <a href="mailto:contact@ssip-pl.ch">
+                <Mail className="w-4 h-4 mr-2" />
+                contact@ssip-pl.ch
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
