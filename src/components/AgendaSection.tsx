@@ -2,12 +2,12 @@ import { Factory, Presentation } from "lucide-react";
 
 const AgendaSection = () => {
   return (
-    <section className="py-24 px-4 bg-secondary/30" id="agenda">
+    <section className="py-16 sm:py-20 md:py-24 px-4 bg-secondary/30" id="agenda">
       <div className="container max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-16">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-center mb-10 sm:mb-16">
           Summit <span className="text-primary">Agenda</span>
         </h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
           {/* Day 1 */}
           <div className="glass-panel rounded-2xl p-8 glow-border">
             <div className="flex items-center gap-3 mb-6">
