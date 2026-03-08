@@ -1,9 +1,9 @@
 const stats = [
   { value: "2", label: "Days" },
-  { value: "12+", label: "Speakers" },
+  { value: "Announcing", label: "Speakers", subLabel: "Soon" },
   { value: "200", label: "Attendees" },
   { value: "TBA", label: "Sponsors & Partners" },
-  { value: "25+", label: "Countries" },
+  { value: "Global", label: "Countries", subLabel: "Participation" },
 ];
 
 const StatsBar = () => {
