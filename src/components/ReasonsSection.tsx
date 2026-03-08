@@ -68,7 +68,7 @@ const ReasonsSection = () => {
     <section className="py-24 px-4 bg-secondary/30">
       <div className="container max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-16">
-          5 Reasons to Attend <span className="text-primary">GOIS 2026</span>
+          Why <span className="text-primary">GOIS</span> Matters
         </h2>
         <div className="space-y-6">
           {reasons.map((r, i) => (

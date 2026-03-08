@@ -15,7 +15,7 @@ const CTASection = () => {
             microgravity life sciences, or enabling infrastructure — we would be delighted to host you in Switzerland.
           </p>
           <p className="text-muted-foreground mb-8 text-sm">
-            We are actively welcoming speakers and participating organizations from the US, Europe, and Asia.
+            We are welcoming leading organizations and speakers building the future of orbital infrastructure across the United States, Europe, and Asia.
           </p>
           <Button
             size="lg"

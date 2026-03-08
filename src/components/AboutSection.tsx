@@ -3,22 +3,38 @@ const AboutSection = () => {
     <section className="py-24 px-4">
       <div className="container max-w-4xl text-center">
         <h2 className="text-3xl md:text-4xl font-display font-bold mb-8">
-          Welcome to <span className="text-primary">GOIS 2026</span>
+          Executive <span className="text-primary">Briefing</span>
         </h2>
         <div className="space-y-6 text-muted-foreground leading-relaxed text-base md:text-lg">
-          <p>
-            The <span className="text-foreground font-medium">Global Orbital Infrastructure Summit</span> is an
-            invitation-only gathering organized by <span className="text-primary">SSIP — Space Systems Innovation Platform</span>,
-            bringing together space agencies, private operators, investors, and policymakers to shape the next era of orbital infrastructure.
+          <p className="text-foreground font-medium">
+            Humanity is entering a new phase of the space economy.
           </p>
           <p>
-            Held in <span className="text-foreground font-medium">Switzerland</span>, GOIS 2026 spans two days:
-            exclusive Swiss industrial visits on June 24 — featuring high-precision manufacturing, robotics, micro-mechanics,
-            life sciences, and advanced materials companies — followed by the full Summit on June 25.
+            For decades, activity in Low Earth Orbit was primarily driven by national programs and scientific missions. Today, a new transformation is underway.
+          </p>
+          <p className="text-foreground font-medium">
+            Orbit is evolving into a permanent industrial domain.
           </p>
           <p>
-            We are actively welcoming speakers and participating organizations building the future of orbital infrastructure
-            across the <span className="text-foreground font-medium">US, Europe, and Asia</span>.
+            Commercial space stations, orbital logistics networks, in-orbit manufacturing platforms, and microgravity research facilities are beginning to form the foundations of a new economic layer beyond Earth.
+          </p>
+          <p>
+            The development of this infrastructure will define the next decade of the global space economy.
+          </p>
+          <p>
+            However, building orbital infrastructure is not only a technological challenge.
+          </p>
+          <p>
+            It is a strategic coordination challenge requiring alignment between industry, research institutions, governments, and capital markets.
+          </p>
+          <p>
+            The <span className="text-foreground font-medium">Global Orbital Infrastructure Summit (GOIS)</span> was created to support this alignment.
+          </p>
+          <p>
+            GOIS brings together a curated international group of decision-makers shaping the future of orbital infrastructure.
+          </p>
+          <p>
+            Participation is intentionally limited to ensure high-quality dialogue and trusted collaboration.
           </p>
         </div>
       </div>
