@@ -23,7 +23,7 @@ const HeroSection = ({ onRegisterClick }: HeroSectionProps) => {
       <img src={realStation2} alt="" className="absolute bottom-[22%] left-[2%] md:bottom-[26%] md:left-[5%] w-14 md:w-26 opacity-55 animate-orbit-reverse pointer-events-none select-none" style={{ zIndex: 2, filter: 'brightness(1.0) contrast(1.15)' }} />
       <img src={rocket} alt="" className="absolute bottom-[8%] right-[12%] md:bottom-[10%] md:right-[18%] w-8 md:w-14 opacity-70 animate-rocket pointer-events-none select-none" style={{ zIndex: 2, filter: 'brightness(1.1)' }} />
 
-      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
+      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto" style={{ textShadow: '0 2px 20px hsl(220 20% 4% / 0.9), 0 4px 40px hsl(220 20% 4% / 0.7), 0 0 80px hsl(220 20% 4% / 0.5)' }}>
         <img src={ssipLogo} alt="SSIP Logo" className="w-20 h-20 mx-auto mb-6" />
         <p className="text-primary font-display text-sm tracking-[0.3em] uppercase mb-4 animate-pulse-glow">
           Organized by SSIP — Space Systems Innovation Platform
