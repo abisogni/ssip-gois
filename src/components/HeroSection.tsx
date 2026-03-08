@@ -17,10 +17,11 @@ const HeroSection = ({ onRegisterClick }: HeroSectionProps) => {
       <Suspense fallback={<div className="absolute inset-0 bg-background" />}>
         <SpaceBackground />
       </Suspense>
-      <div className="absolute inset-0 hero-overlay" style={{ zIndex: 1 }} />
-      <img src={realStation1} alt="" className="absolute top-[12%] right-[3%] md:top-[15%] md:right-[7%] w-16 md:w-28 opacity-50 animate-orbit-slow pointer-events-none select-none" style={{ zIndex: 2, filter: 'brightness(0.8) contrast(1.1)' }} />
-      <img src={realStation2} alt="" className="absolute bottom-[22%] left-[2%] md:bottom-[26%] md:left-[5%] w-12 md:w-22 opacity-35 animate-orbit-reverse pointer-events-none select-none" style={{ zIndex: 2, filter: 'brightness(0.7) contrast(1.1)' }} />
-      <img src={rocket} alt="" className="absolute bottom-[8%] right-[12%] md:bottom-[10%] md:right-[18%] w-6 md:w-12 opacity-55 animate-rocket pointer-events-none select-none" style={{ zIndex: 2, filter: 'brightness(0.85)' }} />
+      {/* Reduced overlay — only bottom fade for text readability */}
+      <div className="absolute inset-0" style={{ zIndex: 1, background: 'linear-gradient(180deg, transparent 0%, transparent 35%, hsl(220 20% 4% / 0.4) 60%, hsl(220 20% 4% / 0.85) 100%)' }} />
+      <img src={realStation1} alt="" className="absolute top-[12%] right-[3%] md:top-[15%] md:right-[7%] w-20 md:w-36 opacity-75 animate-orbit-slow pointer-events-none select-none" style={{ zIndex: 2, filter: 'brightness(1.1) contrast(1.15)' }} />
+      <img src={realStation2} alt="" className="absolute bottom-[22%] left-[2%] md:bottom-[26%] md:left-[5%] w-14 md:w-26 opacity-55 animate-orbit-reverse pointer-events-none select-none" style={{ zIndex: 2, filter: 'brightness(1.0) contrast(1.15)' }} />
+      <img src={rocket} alt="" className="absolute bottom-[8%] right-[12%] md:bottom-[10%] md:right-[18%] w-8 md:w-14 opacity-70 animate-rocket pointer-events-none select-none" style={{ zIndex: 2, filter: 'brightness(1.1)' }} />
 
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
         <img src={ssipLogo} alt="SSIP Logo" className="w-20 h-20 mx-auto mb-6" />
