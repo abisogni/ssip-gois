@@ -7,7 +7,7 @@ const CTASection = () => {
       <div className="container max-w-4xl">
         <div className="glass-panel rounded-2xl p-6 sm:p-10 md:p-16 text-center glow-border">
           <Mic className="w-12 h-12 text-primary mx-auto mb-6" />
-          <h2 className="text-2xl md:text-3xl font-display font-bold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-display font-bold mb-4">
             Interested in <span className="text-primary">Speaking or Participating?</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-4 leading-relaxed">
