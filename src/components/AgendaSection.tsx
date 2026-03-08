@@ -9,7 +9,7 @@ const AgendaSection = () => {
         </h2>
         <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
           {/* Day 1 */}
-          <div className="glass-panel rounded-2xl p-8 glow-border">
+            <div className="glass-panel rounded-2xl p-5 sm:p-8 glow-border">
             <div className="flex items-center gap-3 mb-6">
               <div className="gradient-primary rounded-full p-3">
                 <Factory className="w-6 h-6 text-primary-foreground" />
