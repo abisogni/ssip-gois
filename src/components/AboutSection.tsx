@@ -36,6 +36,12 @@ const AboutSection = () => {
           <p>
             Participation is intentionally limited to ensure high-quality dialogue and trusted collaboration.
           </p>
+          <p>
+            GOIS is designed to become one of the leading global forums dedicated to the development of orbital infrastructure and the emerging orbital economy.
+          </p>
+          <p>
+            Hosted in Switzerland, the summit provides a neutral platform for international collaboration shaping humanity's next industrial frontier in space.
+          </p>
         </div>
       </div>
     </section>
