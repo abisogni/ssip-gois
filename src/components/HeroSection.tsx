@@ -1,30 +1,38 @@
-import heroImage from "@/assets/hero-space.jpg";
+import { lazy, Suspense } from "react";
 import ssipLogo from "@/assets/ssip-logo.png";
 import realStation1 from "@/assets/real-station-1.png";
 import realStation2 from "@/assets/real-station-2.png";
 import { Button } from "@/components/ui/button";
 
+const SpaceBackground = lazy(() => import("@/components/SpaceBackground"));
+
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with Earth rotating */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-        <div className="relative animate-spin-slow" style={{ width: '325%', height: '325%' }}>
-          <img src={heroImage} alt="Space orbital infrastructure" className="absolute inset-0 w-full h-full object-cover" />
-        </div>
-      </div>
-      <div className="absolute inset-0 hero-overlay" />
+      {/* 3D Space Background */}
+      <Suspense
+        fallback={
+          <div className="absolute inset-0 bg-background" />
+        }
+      >
+        <SpaceBackground />
+      </Suspense>
+
+      {/* Dark gradient overlay for text readability */}
+      <div className="absolute inset-0 hero-overlay" style={{ zIndex: 1 }} />
 
       {/* Realistic orbital stations */}
       <img
         src={realStation1}
         alt=""
         className="absolute top-[10%] right-[5%] md:top-[14%] md:right-[10%] w-24 md:w-40 opacity-70 animate-orbit-slow pointer-events-none select-none"
+        style={{ zIndex: 2 }}
       />
       <img
         src={realStation2}
         alt=""
         className="absolute bottom-[18%] left-[3%] md:bottom-[22%] md:left-[8%] w-20 md:w-32 opacity-55 animate-orbit-reverse pointer-events-none select-none"
+        style={{ zIndex: 2 }}
       />
 
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
