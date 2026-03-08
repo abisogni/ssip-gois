@@ -15,6 +15,7 @@ const StatsBar = () => {
             <div key={stat.label} className="last:col-span-2 sm:last:col-span-1 md:last:col-span-1">
               <p className="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-primary glow-text">{stat.value}</p>
               <p className="text-muted-foreground text-xs sm:text-sm mt-1">{stat.label}</p>
+              {stat.subLabel && <p className="text-muted-foreground text-xs sm:text-sm">{stat.subLabel}</p>}
             </div>
           ))}
         </div>
