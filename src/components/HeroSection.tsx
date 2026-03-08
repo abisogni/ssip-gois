@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import ssipLogo from "@/assets/ssip-logo.png";
 import realStation1 from "@/assets/real-station-1.png";
 import realStation2 from "@/assets/real-station-2.png";
+import rocket from "@/assets/rocket.png";
 import { Button } from "@/components/ui/button";
 
 const SpaceBackground = lazy(() => import("@/components/SpaceBackground"));
