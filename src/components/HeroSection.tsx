@@ -18,8 +18,9 @@ const HeroSection = ({ onRegisterClick }: HeroSectionProps) => {
         <SpaceBackground />
       </Suspense>
       <div className="absolute inset-0 hero-overlay" style={{ zIndex: 1 }} />
-      <img src={realStation1} alt="" className="absolute top-[10%] right-[5%] md:top-[14%] md:right-[10%] w-24 md:w-40 opacity-70 animate-orbit-slow pointer-events-none select-none" style={{ zIndex: 2 }} />
-      <img src={realStation2} alt="" className="absolute bottom-[18%] left-[3%] md:bottom-[22%] md:left-[8%] w-20 md:w-32 opacity-55 animate-orbit-reverse pointer-events-none select-none" style={{ zIndex: 2 }} />
+      <img src={realStation1} alt="" className="absolute top-[12%] right-[4%] md:top-[16%] md:right-[8%] w-20 md:w-36 opacity-60 animate-orbit-slow pointer-events-none select-none" style={{ zIndex: 2 }} />
+      <img src={realStation2} alt="" className="absolute bottom-[20%] left-[2%] md:bottom-[24%] md:left-[6%] w-16 md:w-28 opacity-45 animate-orbit-reverse pointer-events-none select-none" style={{ zIndex: 2 }} />
+      <img src={rocket} alt="" className="absolute bottom-[10%] right-[15%] md:bottom-[12%] md:right-[20%] w-8 md:w-14 opacity-65 animate-rocket pointer-events-none select-none" style={{ zIndex: 2 }} />
 
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
         <img src={ssipLogo} alt="SSIP Logo" className="w-20 h-20 mx-auto mb-6" />
