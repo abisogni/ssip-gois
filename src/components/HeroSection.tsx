@@ -36,7 +36,7 @@ const HeroSection = () => {
           Global Orbital Infrastructure <span className="text-primary">Summit 2026</span>
         </h1>
         <p className="text-lg md:text-2xl font-light text-foreground/80 mb-2 max-w-3xl mx-auto">
-          Uniting Innovators, Shaping the Future of Orbital Infrastructure
+          Uniting Global Leaders to Shape the Future of Orbital Infrastructure
         </p>
         <p className="text-muted-foreground text-base md:text-lg mb-4">
           Organized by <span className="text-primary font-semibold">SSIP</span> — Space Systems Innovation Platform
