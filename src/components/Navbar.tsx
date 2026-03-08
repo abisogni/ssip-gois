@@ -5,7 +5,11 @@ import ssipLogo from "@/assets/ssip-logo.png";
 
 const links = ["About", "Agenda", "Themes", "Attend", "Contact"];
 
-const Navbar = () => {
+interface NavbarProps {
+  onRegisterClick?: () => void;
+}
+
+const Navbar = ({ onRegisterClick }: NavbarProps) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -21,8 +25,8 @@ const Navbar = () => {
               {l}
             </a>
           ))}
-          <Button size="sm" className="gradient-primary text-primary-foreground font-display text-xs tracking-wider rounded-full px-6" asChild>
-            <a href="mailto:contact@ssip-pl.ch">Pre-Register</a>
+          <Button size="sm" className="gradient-primary text-primary-foreground font-display text-xs tracking-wider rounded-full px-6" onClick={onRegisterClick}>
+            Pre-Register
           </Button>
         </div>
         <button className="md:hidden text-foreground" onClick={() => setOpen(!open)}>
@@ -36,8 +40,8 @@ const Navbar = () => {
               {l}
             </a>
           ))}
-          <Button size="sm" className="gradient-primary text-primary-foreground font-display text-xs tracking-wider rounded-full w-full" asChild>
-            <a href="mailto:contact@ssip-pl.ch">Pre-Register</a>
+          <Button size="sm" className="gradient-primary text-primary-foreground font-display text-xs tracking-wider rounded-full w-full" onClick={() => { setOpen(false); onRegisterClick?.(); }}>
+            Pre-Register
           </Button>
         </div>
       )}

@@ -41,7 +41,11 @@ const tiers = [
   },
 ];
 
-const PricingSection = () => {
+interface PricingSectionProps {
+  onRegisterClick?: () => void;
+}
+
+const PricingSection = ({ onRegisterClick }: PricingSectionProps) => {
   return (
     <section className="py-24 px-4">
       <div className="container max-w-6xl">
@@ -66,8 +70,8 @@ const PricingSection = () => {
                   </li>
                 ))}
               </ul>
-              <Button className={`w-full font-display tracking-wider ${tier.btnClass}`} asChild>
-                <a href="mailto:contact@ssip-pl.ch">Register</a>
+              <Button className={`w-full font-display tracking-wider ${tier.btnClass}`} onClick={onRegisterClick}>
+                Register
               </Button>
             </div>
           ))}
