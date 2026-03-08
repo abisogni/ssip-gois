@@ -115,7 +115,7 @@ const RegistrationFormDialog = ({ open, onOpenChange }: RegistrationFormDialogPr
 
   return (
     <Dialog open={open} onOpenChange={handleClose}>
-      <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto bg-background border-border">
+      <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto bg-background border-border mx-4 sm:mx-auto">
         {submitted ? (
           <div className="flex flex-col items-center justify-center py-12 text-center gap-4">
             <CheckCircle2 className="w-16 h-16 text-primary" />
