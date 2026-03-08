@@ -16,7 +16,7 @@ const FooterSection = () => {
         </p>
         <div className="flex justify-center gap-6 text-muted-foreground text-sm">
           <a href="https://www.linkedin.com/company/space-systems-innovation-platform-ssip/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">LinkedIn</a>
-          <a href="#" className="hover:text-primary transition-colors">Twitter / X</a>
+          <a href="https://www.ssip-pl.ch" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Website SSIP</a>
         </div>
         <p className="text-muted-foreground/50 text-xs pt-4">© SSIP 2026. All rights reserved.</p>
       </div>
