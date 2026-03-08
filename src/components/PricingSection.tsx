@@ -57,7 +57,7 @@ const PricingSection = ({ onRegisterClick }: PricingSectionProps) => {
           {tiers.map((tier) => (
             <div
               key={tier.name}
-              className={`rounded-2xl p-8 flex flex-col shadow-lg ${tier.cardBg}`}
+              className={`rounded-2xl p-6 sm:p-8 flex flex-col shadow-lg ${tier.cardBg}`}
             >
               <h3 className="font-display text-lg font-bold mb-1">{tier.name}</h3>
               <p className="text-sm mb-6 opacity-70">{tier.duration}</p>

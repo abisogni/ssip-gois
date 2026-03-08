@@ -20,7 +20,7 @@ const ThemesSection = () => {
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {themes.map((theme) => (
-            <div key={theme.title} className="glass-panel rounded-xl p-6 hover:glow-border transition-all duration-300 group">
+            <div key={theme.title} className="glass-panel rounded-xl p-5 sm:p-6 hover:glow-border transition-all duration-300 group">
               <theme.icon className="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="font-display text-base font-semibold mb-2 text-foreground">{theme.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">{theme.desc}</p>

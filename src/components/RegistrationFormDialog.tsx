@@ -133,7 +133,7 @@ const RegistrationFormDialog = ({ open, onOpenChange }: RegistrationFormDialogPr
           <>
             <DialogHeader>
               <DialogTitle className="text-xl font-display font-bold">
-                GOIS 2026 — Attendance Application
+                GOIS 2026: Attendance Application
               </DialogTitle>
               <DialogDescription className="text-muted-foreground text-sm leading-relaxed">
                 The Global Orbital Infrastructure Summit is a curated, invitation-only event.

@@ -31,7 +31,7 @@ const AgendaSection = () => {
           </div>
 
           {/* Day 2 */}
-          <div className="glass-panel rounded-2xl p-8 glow-border">
+          <div className="glass-panel rounded-2xl p-5 sm:p-8 glow-border">
             <div className="flex items-center gap-3 mb-6">
               <div className="gradient-primary rounded-full p-3">
                 <Presentation className="w-6 h-6 text-primary-foreground" />
