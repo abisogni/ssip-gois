@@ -13,7 +13,7 @@ interface HeroSectionProps {
 
 const HeroSection = ({ onRegisterClick }: HeroSectionProps) => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-14 sm:pt-16">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-14 sm:pt-16 pb-20 sm:pb-24">
       <Suspense fallback={<div className="absolute inset-0 bg-background" />}>
         <SpaceBackground />
       </Suspense>
