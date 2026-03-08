@@ -47,13 +47,13 @@ interface PricingSectionProps {
 
 const PricingSection = ({ onRegisterClick }: PricingSectionProps) => {
   return (
-    <section className="py-24 px-4">
+    <section className="py-16 sm:py-20 md:py-24 px-4">
       <div className="container max-w-6xl">
-        <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-center mb-3 sm:mb-4">
           Want to <span className="text-primary">Attend?</span>
         </h2>
-        <p className="text-muted-foreground text-center mb-16">Choose the pass that best fits your profile.</p>
-        <div className="grid md:grid-cols-3 gap-6">
+        <p className="text-muted-foreground text-center mb-10 sm:mb-16 text-sm sm:text-base">Choose the pass that best fits your profile.</p>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           {tiers.map((tier) => (
             <div
               key={tier.name}
