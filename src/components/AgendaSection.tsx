@@ -42,7 +42,7 @@ const AgendaSection = () => {
               </div>
             </div>
             <p className="text-muted-foreground leading-relaxed text-sm">
-              An invitation-only, focused day of keynotes, panels, and networking on the future of orbital infrastructure.
+              A focused day of keynotes, strategic panels, and executive dialogue dedicated to the future of orbital infrastructure.
             </p>
             <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
               <li className="flex items-start gap-2"><span className="text-primary mt-0.5">•</span>Commercial space stations & platforms</li>
