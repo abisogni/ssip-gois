@@ -15,7 +15,7 @@ const FooterSection = () => {
           📩 <a href="mailto:contact@ssip-pl.ch" className="text-primary hover:underline">contact@ssip-pl.ch</a>
         </p>
         <div className="flex justify-center gap-6 text-muted-foreground text-sm">
-          <a href="#" className="hover:text-primary transition-colors">LinkedIn</a>
+          <a href="https://www.linkedin.com/company/space-systems-innovation-platform-ssip/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">LinkedIn</a>
           <a href="#" className="hover:text-primary transition-colors">Twitter / X</a>
         </div>
         <p className="text-muted-foreground/50 text-xs pt-4">© SSIP 2026. All rights reserved.</p>
