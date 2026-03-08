@@ -10,12 +10,12 @@ const themes = [
 
 const ThemesSection = () => {
   return (
-    <section className="py-24 px-4">
+    <section className="py-16 sm:py-20 md:py-24 px-4">
       <div className="container max-w-6xl">
-        <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-center mb-3 sm:mb-4">
           Summit <span className="text-primary">Focus Areas</span>
         </h2>
-        <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-16">
+        <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 sm:mb-16 text-sm sm:text-base">
           A focused, high-signal gathering on the critical pillars of orbital infrastructure.
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
