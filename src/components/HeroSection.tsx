@@ -25,9 +25,6 @@ const HeroSection = ({ onRegisterClick }: HeroSectionProps) => {
 
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto" style={{ textShadow: '0 2px 20px hsl(220 20% 4% / 0.9), 0 4px 40px hsl(220 20% 4% / 0.7), 0 0 80px hsl(220 20% 4% / 0.5)' }}>
         <img src={ssipLogo} alt="SSIP Logo" className="w-20 h-20 mx-auto mb-6" />
-        <p className="text-primary font-display text-sm tracking-[0.3em] uppercase mb-4 animate-pulse-glow">
-          Organized by SSIP — Space Systems Innovation Platform
-        </p>
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-bold mb-6 glow-text leading-tight">
           Global Orbital Infrastructure <span className="text-primary">Summit 2026</span>
         </h1>
@@ -35,12 +32,12 @@ const HeroSection = ({ onRegisterClick }: HeroSectionProps) => {
           Uniting Global Leaders to Shape the Future of Orbital Infrastructure
         </p>
         <p className="text-muted-foreground text-base md:text-lg mb-4">
-          Organized by <span className="text-primary font-semibold">SSIP</span> — Space Systems Innovation Platform
+          Organized by <span className="text-primary font-semibold">SSIP</span>, Space Systems Innovation Platform
         </p>
         <div className="flex flex-col items-center justify-center gap-1 text-muted-foreground mb-10 font-display text-sm tracking-wider">
           <div className="flex items-center gap-2">
             <span>🇨🇭</span>
-            <span>June 24–25, 2026</span>
+            <span>June 24‒25, 2026</span>
             <span className="text-primary">|</span>
             <span>Technopark Luzern, Switzerland</span>
           </div>

@@ -40,7 +40,7 @@ const AboutSection = () => {
             GOIS is designed to become a leading global forum dedicated to the development of orbital infrastructure and the emerging orbital economy.
           </p>
           <p>
-            Hosted in Switzerland — renowned for its precision engineering, neutrality, and tradition of international collaboration — the summit provides a trusted platform for shaping humanity's next industrial frontier in space.
+            Hosted in Switzerland, renowned for its precision engineering, neutrality, and tradition of international collaboration, the summit provides a trusted platform for shaping humanity's next industrial frontier in space.
           </p>
         </div>
       </div>

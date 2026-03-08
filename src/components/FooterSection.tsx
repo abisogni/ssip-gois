@@ -6,7 +6,7 @@ const FooterSection = () => {
           Building the next industrial frontier beyond Earth, together.
         </p>
         <p className="font-display text-lg font-bold">
-          <span className="text-primary">SSIP</span> — Space Systems Innovation Platform
+          <span className="text-primary">SSIP</span>, Space Systems Innovation Platform
         </p>
         <p className="text-muted-foreground text-sm">
           Connecting the orbital infrastructure community worldwide.
