@@ -16,10 +16,10 @@ const AboutSection = () => {
             Orbit is evolving into a permanent industrial domain.
           </p>
           <p>
-            Commercial space stations, orbital logistics networks, in-orbit manufacturing platforms, and microgravity research facilities are beginning to form the foundations of a new economic layer beyond Earth.
+            Commercial space stations, orbital logistics networks, in-orbit manufacturing platforms, and microgravity research facilities are forming the foundations of a new orbital economy beyond Earth. Space logistics and advanced manufacturing capabilities are accelerating this transformation.
           </p>
           <p>
-            The development of this infrastructure will define the next decade of the global space economy.
+            The development of this orbital infrastructure will define the next decade of the global space economy.
           </p>
           <p>
             However, building orbital infrastructure is not only a technological challenge.
@@ -37,10 +37,10 @@ const AboutSection = () => {
             Participation is intentionally limited to ensure high-quality dialogue and trusted collaboration.
           </p>
           <p>
-            GOIS is designed to become one of the leading global forums dedicated to the development of orbital infrastructure and the emerging orbital economy.
+            GOIS is designed to become a leading global forum dedicated to the development of orbital infrastructure and the emerging orbital economy.
           </p>
           <p>
-            Hosted in Switzerland, the summit provides a neutral platform for international collaboration shaping humanity's next industrial frontier in space.
+            Hosted in Switzerland — renowned for its precision engineering, neutrality, and tradition of international collaboration — the summit provides a trusted platform for shaping humanity's next industrial frontier in space.
           </p>
         </div>
       </div>

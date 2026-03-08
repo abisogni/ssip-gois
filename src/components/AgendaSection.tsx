@@ -20,7 +20,7 @@ const AgendaSection = () => {
               </div>
             </div>
             <p className="text-muted-foreground leading-relaxed text-sm">
-              Private visits to selected Swiss high-precision and space-enabled companies spanning manufacturing,
+              Private visits to selected Swiss high-precision and space-enabled companies, showcasing Switzerland's world-class precision engineering across manufacturing,
               robotics, micro-mechanics, life sciences, and advanced materials.
             </p>
             <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
