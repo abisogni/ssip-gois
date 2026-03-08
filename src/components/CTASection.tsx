@@ -3,14 +3,14 @@ import { Mail, Mic } from "lucide-react";
 
 const CTASection = () => {
   return (
-    <section className="py-24 px-4">
+    <section className="py-16 sm:py-20 md:py-24 px-4">
       <div className="container max-w-4xl">
-        <div className="glass-panel rounded-2xl p-10 md:p-16 text-center glow-border">
+        <div className="glass-panel rounded-2xl p-6 sm:p-10 md:p-16 text-center glow-border">
           <Mic className="w-12 h-12 text-primary mx-auto mb-6" />
-          <h2 className="text-2xl md:text-3xl font-display font-bold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-display font-bold mb-4">
             Interested in <span className="text-primary">Speaking or Participating?</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto mb-4 leading-relaxed">
+          <p className="text-muted-foreground max-w-2xl mx-auto mb-4 leading-relaxed text-sm sm:text-base">
             GOIS is a curated international summit bringing together decision-makers across the global space economy. If your organization is advancing commercial space stations, launch and logistics, in-orbit manufacturing,
             microgravity research, or enabling infrastructure, we would be delighted to welcome you in Switzerland.
           </p>

@@ -87,9 +87,9 @@ const RegistrationFormDialog = ({ open, onOpenChange }: RegistrationFormDialogPr
   });
 
   const onSubmit = (data: FormValues) => {
-    const subject = encodeURIComponent("GOIS 2026 — Attendance Application");
+    const subject = encodeURIComponent("GOIS 2026: Attendance Application");
     const body = encodeURIComponent(
-      `GOIS 2026 — Attendance Application\n\n` +
+      `GOIS 2026: Attendance Application\n\n` +
       `First Name: ${data.firstName}\n` +
       `Last Name: ${data.lastName}\n` +
       `Email: ${data.email}\n` +
@@ -115,7 +115,7 @@ const RegistrationFormDialog = ({ open, onOpenChange }: RegistrationFormDialogPr
 
   return (
     <Dialog open={open} onOpenChange={handleClose}>
-      <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto bg-background border-border">
+      <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto bg-background border-border mx-4 sm:mx-auto">
         {submitted ? (
           <div className="flex flex-col items-center justify-center py-12 text-center gap-4">
             <CheckCircle2 className="w-16 h-16 text-primary" />
@@ -133,7 +133,7 @@ const RegistrationFormDialog = ({ open, onOpenChange }: RegistrationFormDialogPr
           <>
             <DialogHeader>
               <DialogTitle className="text-xl font-display font-bold">
-                GOIS 2026 — Attendance Application
+                GOIS 2026: Attendance Application
               </DialogTitle>
               <DialogDescription className="text-muted-foreground text-sm leading-relaxed">
                 The Global Orbital Infrastructure Summit is a curated, invitation-only event.

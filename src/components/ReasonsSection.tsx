@@ -65,15 +65,15 @@ const reasons = [
 
 const ReasonsSection = () => {
   return (
-    <section className="py-24 px-4 bg-secondary/30">
+    <section className="py-16 sm:py-20 md:py-24 px-4 bg-secondary/30">
       <div className="container max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-16">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-center mb-10 sm:mb-16">
           Why <span className="text-primary">GOIS</span> Matters
         </h2>
-        <div className="space-y-6">
+        <div className="space-y-4 sm:space-y-6">
           {reasons.map((r, i) => (
-            <div key={i} className="glass-panel rounded-xl p-6 hover:glow-border transition-all">
-              <div className="flex items-start gap-5">
+            <div key={i} className="glass-panel rounded-xl p-4 sm:p-6 hover:glow-border transition-all">
+              <div className="flex items-start gap-3 sm:gap-5">
                 <div className="gradient-primary rounded-full p-3 shrink-0 mt-1">
                   <r.icon className="w-6 h-6 text-primary-foreground" />
                 </div>

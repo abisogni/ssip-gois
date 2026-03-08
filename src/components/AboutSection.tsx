@@ -1,11 +1,11 @@
 const AboutSection = () => {
   return (
-    <section className="py-24 px-4">
+    <section className="py-16 sm:py-20 md:py-24 px-4">
       <div className="container max-w-4xl text-center">
-        <h2 className="text-3xl md:text-4xl font-display font-bold mb-8">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold mb-6 sm:mb-8">
           Executive <span className="text-primary">Briefing</span>
         </h2>
-        <div className="space-y-6 text-muted-foreground leading-relaxed text-base md:text-lg">
+        <div className="space-y-4 sm:space-y-6 text-muted-foreground leading-relaxed text-sm sm:text-base md:text-lg">
           <p className="text-foreground font-medium">
             Humanity is entering a new phase of the space economy.
           </p>

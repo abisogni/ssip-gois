@@ -197,17 +197,20 @@ const SpaceScene = () => (
   </>
 );
 
-const SpaceBackground = () => (
-  <div className="absolute inset-0" style={{ zIndex: 0 }}>
-    <Canvas
-      camera={{ position: [0, 0, 5], fov: 50 }}
-      dpr={[1, 1.5]}
-      gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
-      style={{ background: "radial-gradient(ellipse at 55% 45%, #080c18 0%, #020306 65%, #000000 100%)" }}
-    >
-      <SpaceScene />
-    </Canvas>
-  </div>
-);
+const SpaceBackground = () => {
+  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+  return (
+    <div className="absolute inset-0" style={{ zIndex: 0 }}>
+      <Canvas
+        camera={{ position: [0, 0, 5], fov: isMobile ? 55 : 50 }}
+        dpr={[1, isMobile ? 1 : 1.5]}
+        gl={{ antialias: !isMobile, alpha: true, powerPreference: "high-performance" }}
+        style={{ background: "radial-gradient(ellipse at 55% 45%, #080c18 0%, #020306 65%, #000000 100%)" }}
+      >
+        <SpaceScene />
+      </Canvas>
+    </div>
+  );
+};
 
 export default SpaceBackground;
