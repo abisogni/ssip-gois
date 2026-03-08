@@ -15,9 +15,9 @@ const Navbar = ({ onRegisterClick }: NavbarProps) => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass-panel border-b border-border/30">
       <div className="container flex items-center justify-between h-14 sm:h-16 px-4">
-        <a href="#" className="flex items-center gap-2 min-w-0">
+        <a href="#" className="flex items-center gap-2 min-w-0 max-w-[65%] md:max-w-none">
           <img src={ssipLogo} alt="SSIP Logo" className="h-8 w-8 sm:h-9 sm:w-9 shrink-0 brightness-125 contrast-110 drop-shadow-[0_0_4px_hsl(var(--primary)/0.3)]" />
-          <span className="font-display font-bold text-xs sm:text-sm tracking-wider text-foreground truncate">Global Orbital Infrastructure Summit</span>
+          <span className="font-display font-bold text-[10px] sm:text-xs md:text-sm tracking-wider text-foreground leading-tight line-clamp-2 md:line-clamp-1">Global Orbital Infrastructure Summit</span>
         </a>
         <div className="hidden md:flex items-center gap-8">
           {links.map((l) => (
