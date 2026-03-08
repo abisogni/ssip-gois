@@ -16,7 +16,7 @@ const AboutSection = () => {
             Orbit is evolving into a permanent industrial domain.
           </p>
           <p>
-            Commercial space stations, orbital logistics networks, in-orbit manufacturing platforms, and microgravity research facilities are forming the foundations of a new orbital economy beyond Earth. Space logistics and advanced manufacturing capabilities are accelerating this transformation.
+            Commercial space stations, orbital logistics networks, in-orbit manufacturing platforms, and microgravity research facilities are forming the foundations of a new industrial economy beyond Earth. Space logistics and advanced manufacturing capabilities are accelerating this transformation.
           </p>
           <p>
             The development of this orbital infrastructure will define the next decade of the global space economy.
