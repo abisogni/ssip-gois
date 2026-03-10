@@ -5,7 +5,7 @@ const tiers = [
   {
     name: "2-Day Full Access",
     duration: "June 24–25",
-    price: "1,750 CHF",
+    price: "1,000 CHF",
     features: [
       "Access to the full Summit",
       "Access to Social Events (Exclusive Dinner, Visits 24th)",
@@ -19,7 +19,7 @@ const tiers = [
   {
     name: "1-Day Full Access",
     duration: "June 25",
-    price: "1,200 CHF",
+    price: "750 CHF",
     features: [
       "Access to 1-day Summit (25th)",
       "Closed Strategy Sessions",
@@ -32,7 +32,7 @@ const tiers = [
   {
     name: "1-Day Summit",
     duration: "June 25",
-    price: "750 CHF",
+    price: "375 CHF",
     features: [
       "Access to 1-day Summit (25th)",
     ],
