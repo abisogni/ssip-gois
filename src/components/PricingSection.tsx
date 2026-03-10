@@ -32,7 +32,7 @@ const tiers = [
   {
     name: "1-Day Summit",
     duration: "June 25",
-    price: "750 CHF",
+    price: "375 CHF",
     features: [
       "Access to 1-day Summit (25th)",
     ],
