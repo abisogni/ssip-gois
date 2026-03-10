@@ -5,7 +5,7 @@ const tiers = [
   {
     name: "2-Day Full Access",
     duration: "June 24–25",
-    price: "1,750 CHF",
+    price: "1,000 CHF",
     features: [
       "Access to the full Summit",
       "Access to Social Events (Exclusive Dinner, Visits 24th)",
