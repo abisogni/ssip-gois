@@ -6,6 +6,7 @@ const tiers = [
     name: "2-Day Full Access",
     duration: "June 24–25",
     price: "1,000 CHF",
+    badge: "Limited to 35 people",
     features: [
       "Access to the full Summit",
       "Access to Social Events (Exclusive Dinner, Visits 24th)",
