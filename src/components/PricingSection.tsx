@@ -5,7 +5,8 @@ const tiers = [
   {
     name: "2-Day Full Access",
     duration: "June 24–25",
-    price: "1,750 CHF",
+    price: "1,000 CHF",
+    badge: "Limited to 35 people",
     features: [
       "Access to the full Summit",
       "Access to Social Events (Exclusive Dinner, Visits 24th)",
@@ -19,7 +20,7 @@ const tiers = [
   {
     name: "1-Day Full Access",
     duration: "June 25",
-    price: "1,200 CHF",
+    price: "500 CHF",
     features: [
       "Access to 1-day Summit (25th)",
       "Closed Strategy Sessions",
@@ -32,7 +33,7 @@ const tiers = [
   {
     name: "1-Day Summit",
     duration: "June 25",
-    price: "750 CHF",
+    price: "375 CHF",
     features: [
       "Access to 1-day Summit (25th)",
     ],
@@ -61,7 +62,9 @@ const PricingSection = ({ onRegisterClick }: PricingSectionProps) => {
             >
               <h3 className="font-display text-lg font-bold mb-1">{tier.name}</h3>
               <p className="text-sm mb-6 opacity-70">{tier.duration}</p>
-              <p className="text-3xl font-display font-bold mb-8">{tier.price}</p>
+              <p className="text-3xl font-display font-bold mb-2">{tier.price}</p>
+              {tier.badge && <p className="text-xs font-semibold uppercase tracking-wide opacity-80 mb-6">{tier.badge}</p>}
+              {!tier.badge && <div className="mb-6" />}
               <ul className="space-y-3 mb-8 flex-1">
                 {tier.features.map((f) => (
                   <li key={f} className="flex items-start gap-2 text-sm">
