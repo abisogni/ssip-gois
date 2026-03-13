@@ -4,7 +4,7 @@ import technopark from "@/assets/sponsor-technopark.png";
 
 const sponsors = [
   { name: "Swiss Fibertec", logo: swissFibertec, invert: true },
-  { name: "HSLU – Hochschule Luzern", logo: hslu, invert: true },
+  { name: "HSLU – Hochschule Luzern", logo: hslu, invert: false },
   { name: "Technopark Luzern", logo: technopark, invert: false },
 ];
 
