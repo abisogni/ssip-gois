@@ -22,12 +22,12 @@ const SponsorsSection = () => {
           {sponsors.map((s) => (
             <div
               key={s.name}
-              className="glass-panel glow-border rounded-2xl p-6 sm:p-8 flex items-center justify-center w-[200px] sm:w-[240px] h-[100px] sm:h-[120px] transition-transform hover:scale-105"
+              className="glass-panel glow-border rounded-2xl p-6 sm:p-8 flex items-center justify-center w-[200px] sm:w-[240px] h-[100px] sm:h-[120px] transition-transform hover:scale-105 overflow-hidden"
             >
               <img
                 src={s.logo}
                 alt={s.name}
-                className="max-h-14 sm:max-h-16 w-auto object-contain brightness-0 invert opacity-85 hover:opacity-100 transition-opacity"
+                className={`max-h-14 sm:max-h-16 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity ${s.invert ? "brightness-0 invert" : ""}`}
               />
             </div>
           ))}
