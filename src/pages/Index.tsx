@@ -26,6 +26,7 @@ const Index = () => {
       <div id="themes"><ThemesSection /></div>
       <div id="attend"><ReasonsSection /></div>
       <PricingSection onRegisterClick={openReg} />
+      <SponsorsSection />
       <CTASection />
       <div id="partners"><FooterSection /></div>
       <RegistrationFormDialog open={regOpen} onOpenChange={setRegOpen} />
