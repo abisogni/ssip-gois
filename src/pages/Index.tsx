@@ -7,6 +7,7 @@ import AgendaSection from "@/components/AgendaSection";
 import ThemesSection from "@/components/ThemesSection";
 import ReasonsSection from "@/components/ReasonsSection";
 import PricingSection from "@/components/PricingSection";
+import SponsorsSection from "@/components/SponsorsSection";
 import CTASection from "@/components/CTASection";
 import FooterSection from "@/components/FooterSection";
 import RegistrationFormDialog from "@/components/RegistrationFormDialog";
@@ -25,6 +26,7 @@ const Index = () => {
       <div id="themes"><ThemesSection /></div>
       <div id="attend"><ReasonsSection /></div>
       <PricingSection onRegisterClick={openReg} />
+      <SponsorsSection />
       <CTASection />
       <div id="partners"><FooterSection /></div>
       <RegistrationFormDialog open={regOpen} onOpenChange={setRegOpen} />
