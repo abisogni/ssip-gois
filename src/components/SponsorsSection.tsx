@@ -27,7 +27,7 @@ const SponsorsSection = () => {
               <img
                 src={s.logo}
                 alt={s.name}
-                className={`max-h-14 sm:max-h-16 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity ${s.invert ? "brightness-0 invert" : ""}`}
+                className={`${s.className || "max-h-14 sm:max-h-16"} w-auto object-contain opacity-85 hover:opacity-100 transition-opacity ${s.invert ? "brightness-0 invert" : ""}`}
               />
             </div>
           ))}
