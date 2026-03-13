@@ -1,5 +1,5 @@
 import swissFibertec from "@/assets/sponsor-swiss-fibertec.png";
-import hslu from "@/assets/sponsor-hslu.jpg";
+import hslu from "@/assets/sponsor-hslu.png";
 import technopark from "@/assets/sponsor-technopark.png";
 
 const sponsors = [
