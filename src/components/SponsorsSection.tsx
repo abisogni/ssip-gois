@@ -3,9 +3,9 @@ import hslu from "@/assets/sponsor-hslu.png";
 import technopark from "@/assets/sponsor-technopark.png";
 
 const sponsors = [
-  { name: "Swiss Fibertec", logo: swissFibertec },
-  { name: "HSLU – Hochschule Luzern", logo: hslu },
-  { name: "Technopark Luzern", logo: technopark },
+  { name: "Swiss Fibertec", logo: swissFibertec, invert: true },
+  { name: "HSLU – Lucerne University of Applied Sciences and Arts", logo: hslu, invert: false },
+  { name: "Technopark Luzern", logo: technopark, invert: false },
 ];
 
 const SponsorsSection = () => {
@@ -22,12 +22,12 @@ const SponsorsSection = () => {
           {sponsors.map((s) => (
             <div
               key={s.name}
-              className="glass-panel glow-border rounded-2xl p-6 sm:p-8 flex items-center justify-center w-[200px] sm:w-[240px] h-[100px] sm:h-[120px] transition-transform hover:scale-105"
+              className="glass-panel glow-border rounded-2xl p-6 sm:p-8 flex items-center justify-center w-[200px] sm:w-[240px] h-[100px] sm:h-[120px] transition-transform hover:scale-105 overflow-hidden"
             >
               <img
                 src={s.logo}
                 alt={s.name}
-                className="max-h-14 sm:max-h-16 w-auto object-contain brightness-0 invert opacity-85 hover:opacity-100 transition-opacity"
+                className={`max-h-14 sm:max-h-16 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity ${s.invert ? "brightness-0 invert" : ""}`}
               />
             </div>
           ))}
