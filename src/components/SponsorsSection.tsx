@@ -1,11 +1,11 @@
 import swissFibertec from "@/assets/sponsor-swiss-fibertec.png";
-import hslu from "@/assets/sponsor-hslu.png";
+import hslu from "@/assets/sponsor-hslu.jpg";
 import technopark from "@/assets/sponsor-technopark.png";
 
 const sponsors = [
-  { name: "Swiss Fibertec", logo: swissFibertec, invert: true, className: "" },
-  { name: "HSLU – Lucerne University of Applied Sciences and Arts", logo: hslu, invert: false, className: "max-h-20 sm:max-h-24" },
-  { name: "Technopark Luzern", logo: technopark, invert: false, className: "" },
+  { name: "Swiss Fibertec", logo: swissFibertec, invert: true },
+  { name: "HSLU – Hochschule Luzern", logo: hslu, invert: true },
+  { name: "Technopark Luzern", logo: technopark, invert: false },
 ];
 
 const SponsorsSection = () => {
@@ -27,7 +27,7 @@ const SponsorsSection = () => {
               <img
                 src={s.logo}
                 alt={s.name}
-                className={`${s.className || "max-h-14 sm:max-h-16"} w-auto object-contain opacity-85 hover:opacity-100 transition-opacity ${s.invert ? "brightness-0 invert" : ""}`}
+                className={`max-h-14 sm:max-h-16 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity ${s.invert ? "brightness-0 invert" : ""}`}
               />
             </div>
           ))}
