@@ -2,10 +2,13 @@ import swissFibertec from "@/assets/sponsor-swiss-fibertec.png";
 import hslu from "@/assets/sponsor-hslu.jpg";
 import technopark from "@/assets/sponsor-technopark.png";
 
+const maxon = "https://res.cloudinary.com/dutcsd19r/image/upload/v1775835344/sponsor-maxon.png";
+
 const sponsors = [
   { name: "Swiss Fibertec", logo: swissFibertec, invert: false, bg: undefined },
   { name: "HSLU – Hochschule Luzern", logo: hslu, invert: false, bg: "#ffffff" },
   { name: "Technopark Luzern", logo: technopark, invert: false, bg: undefined },
+  { name: "Maxon", logo: maxon, invert: false, bg: "#ffffff" },
 ];
 
 const SponsorsSection = () => {
