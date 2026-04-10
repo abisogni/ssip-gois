@@ -20,7 +20,12 @@ export default async function handler(req: any, res: any) {
     return res.status(400).json({ error: 'Missing or invalid fields' });
   }
 
-  const client = new MongoClient(process.env.MONGODB_URI!);
+  if (!process.env.MONGODB_URI) {
+    console.error('[register] MONGODB_URI env var is not set');
+    return res.status(500).json({ error: 'Server misconfiguration' });
+  }
+
+  const client = new MongoClient(process.env.MONGODB_URI);
   try {
     await client.connect();
     await client
