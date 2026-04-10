@@ -3,9 +3,9 @@ import hslu from "@/assets/sponsor-hslu.jpg";
 import technopark from "@/assets/sponsor-technopark.png";
 
 const sponsors = [
-  { name: "Swiss Fibertec", logo: swissFibertec, invert: false },
-  { name: "HSLU – Hochschule Luzern", logo: hslu, invert: false },
-  { name: "Technopark Luzern", logo: technopark, invert: false },
+  { name: "Swiss Fibertec", logo: swissFibertec, invert: false, bg: undefined },
+  { name: "HSLU – Hochschule Luzern", logo: hslu, invert: false, bg: "#ffffff" },
+  { name: "Technopark Luzern", logo: technopark, invert: false, bg: undefined },
 ];
 
 const SponsorsSection = () => {
@@ -23,6 +23,7 @@ const SponsorsSection = () => {
             <div
               key={s.name}
               className="glass-panel glow-border rounded-2xl p-6 sm:p-8 flex items-center justify-center w-[200px] sm:w-[240px] h-[100px] sm:h-[120px] transition-transform hover:scale-105 overflow-hidden"
+              style={s.bg ? { backgroundColor: s.bg } : {}}
             >
               <img
                 src={s.logo}
