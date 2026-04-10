@@ -81,6 +81,11 @@
     box-shadow: 0 0 15px hsl(var(--primary) / 0.15), inset 0 0 15px hsl(var(--primary) / 0.05);
   }
 
+  .glow-border-strong {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.35), inset 0 0 18px hsl(var(--primary) / 0.12);
+    border-color: hsl(var(--primary) / 0.3);
+  }
+
   .gradient-primary {
     background: linear-gradient(135deg, hsl(var(--glow-cyan)), hsl(var(--glow-blue)));
   }

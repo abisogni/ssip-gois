@@ -22,7 +22,7 @@ const SponsorsSection = () => {
           {sponsors.map((s) => (
             <div
               key={s.name}
-              className="glass-panel glow-border rounded-2xl p-6 sm:p-8 flex items-center justify-center w-[200px] sm:w-[240px] h-[100px] sm:h-[120px] transition-transform hover:scale-105 overflow-hidden"
+              className="glass-panel glow-border-strong rounded-2xl p-6 sm:p-8 flex items-center justify-center w-[200px] sm:w-[240px] h-[100px] sm:h-[120px] transition-transform hover:scale-105 overflow-hidden"
               style={s.bg ? { backgroundColor: s.bg } : {}}
             >
               <img
