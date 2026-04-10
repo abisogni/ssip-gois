@@ -4,6 +4,7 @@ import { Check } from "lucide-react";
 const tiers = [
   {
     name: "2-Day Full Access",
+    tierValue: "platinum",
     duration: "June 24–25",
     price: "1,000 CHF",
     badge: "Limited to 35 people",
@@ -19,6 +20,7 @@ const tiers = [
   },
   {
     name: "1-Day Full Access",
+    tierValue: "gold",
     duration: "June 25",
     price: "500 CHF",
     features: [
@@ -32,6 +34,7 @@ const tiers = [
   },
   {
     name: "1-Day Summit",
+    tierValue: "silver",
     duration: "June 25",
     price: "375 CHF",
     features: [
@@ -43,7 +46,7 @@ const tiers = [
 ];
 
 interface PricingSectionProps {
-  onRegisterClick?: () => void;
+  onRegisterClick?: (tier: string) => void;
 }
 
 const PricingSection = ({ onRegisterClick }: PricingSectionProps) => {
@@ -73,7 +76,7 @@ const PricingSection = ({ onRegisterClick }: PricingSectionProps) => {
                   </li>
                 ))}
               </ul>
-              <Button className={`w-full font-display tracking-wider ${tier.btnClass}`} onClick={onRegisterClick}>
+              <Button className={`w-full font-display tracking-wider ${tier.btnClass}`} onClick={() => onRegisterClick?.(tier.tierValue)}>
                 Register
               </Button>
             </div>
