@@ -24,7 +24,7 @@ import {
 } from "@/components/ui/form";
 import { CheckCircle2, Loader2 } from "lucide-react";
 
-const WEBHOOK_URL = import.meta.env.VITE_WEBHOOK_URL as string | undefined;
+const REGISTER_URL = '/api/register';
 
 const tierOptions = [
   {
@@ -129,8 +129,7 @@ const RegistrationSection = ({ selectedTier, sectionRef }: RegistrationSectionPr
   const onSubmit = async (data: FormValues) => {
     setStatus("loading");
     try {
-      if (!WEBHOOK_URL) throw new Error("Webhook not configured");
-      const res = await fetch(WEBHOOK_URL, {
+      const res = await fetch(REGISTER_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...data, submittedAt: new Date().toISOString() }),
