@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
-import sgeLogo from "@/assets/partner-sge.png";
-import lucerneLogo from "@/assets/partner-lucerne.png";
+
+const sgeLogo = "https://res.cloudinary.com/dutcsd19r/image/upload/v1775834887/partner-sge.png";
+const lucerneLogo = "https://res.cloudinary.com/dutcsd19r/image/upload/v1775834890/partner-lucerne.png";
 
 const MarketAccessSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
