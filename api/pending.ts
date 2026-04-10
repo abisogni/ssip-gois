@@ -25,6 +25,7 @@ export default async function handler(req: any, res: any) {
       .toArray();
     return res.status(200).json(docs.map(d => ({
       registrationId: d.registrationId,
+      confirmationNumber: d.confirmationNumber,
       tier: d.tier,
       firstName: d.firstName,
       lastName: d.lastName,

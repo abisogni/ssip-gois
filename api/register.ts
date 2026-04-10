@@ -1,7 +1,13 @@
 import { MongoClient } from 'mongodb';
-import { randomUUID } from 'crypto';
+import { randomUUID, randomBytes } from 'crypto';
 
 const VALID_TIERS = ['platinum', 'gold', 'silver'];
+
+function generateConfirmationNumber(): string {
+  const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+  const bytes = randomBytes(6);
+  return 'GOIS2026-' + Array.from(bytes).map(b => chars[b % chars.length]).join('');
+}
 
 export default async function handler(req: any, res: any) {
   if (req.method !== 'POST') {
@@ -28,11 +34,13 @@ export default async function handler(req: any, res: any) {
   const client = new MongoClient(process.env.MONGODB_URI);
   try {
     await client.connect();
+    const confirmationNumber = generateConfirmationNumber();
     await client
       .db('v1-production')
       .collection('gois-registrations')
       .insertOne({
         registrationId: randomUUID(),
+        confirmationNumber,
         submittedAt: new Date(),
         tier,
         firstName: firstName.trim(),
@@ -49,7 +57,7 @@ export default async function handler(req: any, res: any) {
         emailSent: false,
         notificationSent: false,
       });
-    return res.status(200).json({ success: true });
+    return res.status(200).json({ success: true, confirmationNumber });
   } catch (err) {
     console.error('[register]', err);
     return res.status(500).json({ error: 'Internal server error' });
