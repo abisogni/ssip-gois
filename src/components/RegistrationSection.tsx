@@ -85,6 +85,7 @@ const formSchema = z.object({
   industry: z.string().min(1, "Please select an industry"),
   linkedin: z.string().trim().max(500).optional().or(z.literal("")),
   reason: z.string().trim().min(1, "Required").max(2000),
+  mailingList: z.boolean().optional(),
   consent: z.literal(true, {
     errorMap: () => ({ message: "You must acknowledge this to submit" }),
   }),
@@ -114,6 +115,7 @@ const RegistrationSection = ({ selectedTier, sectionRef }: RegistrationSectionPr
       industry: "",
       linkedin: "",
       reason: "",
+      mailingList: false,
       consent: undefined as unknown as true,
     },
   });
@@ -294,6 +296,23 @@ const RegistrationSection = ({ selectedTier, sectionRef }: RegistrationSectionPr
                     <FormLabel>Why would you like to attend GOIS 2026? *</FormLabel>
                     <FormControl><Textarea rows={4} placeholder="Tell us about your interest in GOIS 2026..." {...field} /></FormControl>
                     <FormMessage />
+                  </FormItem>
+                )} />
+
+                {/* Mailing list */}
+                <FormField control={form.control} name="mailingList" render={({ field }) => (
+                  <FormItem className="flex flex-row items-start space-x-3 space-y-0">
+                    <FormControl>
+                      <Checkbox checked={!!field.value} onCheckedChange={field.onChange} />
+                    </FormControl>
+                    <div className="space-y-1 leading-none">
+                      <Label
+                        className="text-sm text-muted-foreground font-normal cursor-pointer"
+                        onClick={() => field.onChange(!field.value)}
+                      >
+                        I would like to receive updates and news from SSIP.
+                      </Label>
+                    </div>
                   </FormItem>
                 )} />
 

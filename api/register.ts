@@ -1,13 +1,7 @@
 import { MongoClient } from 'mongodb';
-import { randomUUID, randomBytes } from 'crypto';
+import { randomUUID } from 'crypto';
 
 const VALID_TIERS = ['platinum', 'gold', 'silver'];
-
-function generateConfirmationNumber(): string {
-  const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
-  const bytes = randomBytes(6);
-  return 'GOIS2026-' + Array.from(bytes).map(b => chars[b % chars.length]).join('');
-}
 
 export default async function handler(req: any, res: any) {
   if (req.method !== 'POST') {
@@ -15,7 +9,7 @@ export default async function handler(req: any, res: any) {
   }
 
   const b = req.body ?? {};
-  const { tier, firstName, lastName, email, phone, company, jobTitle, country, industry, linkedin, reason } = b;
+  const { tier, firstName, lastName, email, phone, company, jobTitle, country, industry, linkedin, reason, mailingList } = b;
 
   if (
     !VALID_TIERS.includes(tier) ||
@@ -34,29 +28,38 @@ export default async function handler(req: any, res: any) {
   const client = new MongoClient(process.env.MONGODB_URI);
   try {
     await client.connect();
-    const confirmationNumber = generateConfirmationNumber();
-    await client
-      .db('v1-production')
-      .collection('gois-registrations')
-      .insertOne({
-        registrationId: randomUUID(),
-        confirmationNumber,
-        submittedAt: new Date(),
-        tier,
-        firstName: firstName.trim(),
-        lastName: lastName.trim(),
-        email: email.trim().toLowerCase(),
-        phone: (phone ?? '').trim(),
-        company: company.trim(),
-        jobTitle: jobTitle.trim(),
-        country: country.trim(),
-        industry,
-        linkedin: (linkedin ?? '').trim(),
-        reason: reason.trim(),
-        status: 'pending',
-        emailSent: false,
-        notificationSent: false,
-      });
+    const db = client.db('v1-production');
+
+    // Sequential confirmation number
+    const counter = await db.collection('gois-counters').findOneAndUpdate(
+      { _id: 'registration' as any },
+      { $inc: { seq: 1 } },
+      { upsert: true, returnDocument: 'after' }
+    );
+    const seq: number = (counter as any)?.seq ?? 1;
+    const confirmationNumber = `GOIS26-${String(seq).padStart(4, '0')}`;
+
+    await db.collection('gois-registrations').insertOne({
+      registrationId: randomUUID(),
+      confirmationNumber,
+      submittedAt: new Date(),
+      tier,
+      firstName: firstName.trim(),
+      lastName: lastName.trim(),
+      email: email.trim().toLowerCase(),
+      phone: (phone ?? '').trim(),
+      company: company.trim(),
+      jobTitle: jobTitle.trim(),
+      country: country.trim(),
+      industry,
+      linkedin: (linkedin ?? '').trim(),
+      reason: reason.trim(),
+      mailingList: mailingList === true,
+      status: 'pending',
+      emailSent: false,
+      notificationSent: false,
+    });
+
     return res.status(200).json({ success: true, confirmationNumber });
   } catch (err) {
     console.error('[register]', err);

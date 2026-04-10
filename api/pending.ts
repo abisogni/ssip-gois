@@ -37,6 +37,7 @@ export default async function handler(req: any, res: any) {
       industry: d.industry,
       linkedin: d.linkedin,
       reason: d.reason,
+      mailingList: d.mailingList ?? false,
       submittedAt: d.submittedAt,
     })));
   } catch (err) {
