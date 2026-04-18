@@ -23,7 +23,7 @@ export default async function handler(req: any, res: any) {
     await client.connect();
     await client
       .db('v1-production')
-      .collection('gois-registrations')
+      .collection('event-registrations')
       .updateOne(
         { registrationId },
         { $set: { emailSent: true, notificationSent: true, processedAt: new Date() } }

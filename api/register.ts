@@ -31,15 +31,15 @@ export default async function handler(req: any, res: any) {
     const db = client.db('v1-production');
 
     // Sequential confirmation number
-    const counter = await db.collection('gois-counters').findOneAndUpdate(
-      { _id: 'registration' as any },
+    const counterDoc = await db.collection('event-counters').findOneAndUpdate(
+      { _id: 'TX-2606' as any },
       { $inc: { seq: 1 } },
       { upsert: true, returnDocument: 'after' }
     );
-    const seq: number = (counter as any)?.seq ?? 1;
+    const seq: number = (counterDoc as any)?.seq ?? 1;
     const confirmationNumber = `GOIS26-${String(seq).padStart(4, '0')}`;
 
-    await db.collection('gois-registrations').insertOne({
+    await db.collection('event-registrations').insertOne({
       registrationId: randomUUID(),
       confirmationNumber,
       submittedAt: new Date(),
@@ -54,6 +54,7 @@ export default async function handler(req: any, res: any) {
       industry,
       linkedin: (linkedin ?? '').trim(),
       reason: reason.trim(),
+      event: 'TX-2606',
       mailingList: mailingList === true,
       status: 'pending',
       emailSent: false,
