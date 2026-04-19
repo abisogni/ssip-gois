@@ -4,15 +4,21 @@ import inventiciaLogo from "@/assets/eps/inventicia-logo.png";
 import { ChevronDown } from "lucide-react";
 import { FloatingParticlesOverlay } from "./AnimatedBackgrounds";
 
+const HERO_VIDEO = "https://res.cloudinary.com/dutcsd19r/video/upload/v1776611161/eps-hero-video.mp4";
+
 const HeroSection = () => (
   <section className="relative min-h-screen flex flex-col items-center justify-start overflow-hidden">
-    {/* Dark gradient base */}
-    <div
-      className="absolute inset-0 z-0"
-      style={{
-        background: "linear-gradient(to bottom, hsl(240 20% 4%) 0%, hsl(240 15% 7%) 50%, hsl(240 20% 4%) 100%)",
-      }}
-    />
+    {/* Video background */}
+    <video
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="absolute inset-0 w-full h-full object-cover z-0"
+      style={{ opacity: 0.32 }}
+    >
+      <source src={HERO_VIDEO} type="video/mp4" />
+    </video>
 
     {/* Dark gradient overlay */}
     <div
