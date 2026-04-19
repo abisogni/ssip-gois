@@ -1,4 +1,4 @@
-import { Factory, Presentation } from "lucide-react";
+import { Factory, Presentation, Users } from "lucide-react";
 
 const AgendaSection = () => {
   return (
@@ -7,6 +7,35 @@ const AgendaSection = () => {
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-center mb-10 sm:mb-16">
           Summit <span className="text-primary">Agenda</span>
         </h2>
+
+        {/* Pre-Summit — full width */}
+        <div className="mb-6 sm:mb-8">
+          <a
+            href="/executive_pre-summit"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block glass-panel rounded-2xl p-5 sm:p-8 glow-border transition-all duration-300 hover:-translate-y-0.5 hover:glow-border-strong"
+          >
+            <div className="flex items-center justify-between gap-4 flex-wrap">
+              <div className="flex items-center gap-3">
+                <div className="gradient-primary rounded-full p-3">
+                  <Users className="w-6 h-6 text-primary-foreground" />
+                </div>
+                <div>
+                  <p className="font-display font-bold text-lg">May 26</p>
+                  <p className="text-primary text-sm font-display">GOIS '26 Executive Pre-Summit</p>
+                </div>
+              </div>
+              <span className="text-xs font-medium uppercase tracking-widest px-3 py-1 rounded-full border border-primary/30 text-primary/70">
+                By Invitation Only
+              </span>
+            </div>
+            <p className="text-muted-foreground leading-relaxed text-sm mt-5">
+              A closed-door executive session in Basel bringing together selected leaders in life sciences, biotechnology, advanced manufacturing, and orbital infrastructure for an early, in-depth look at microgravity's industrial potential.
+            </p>
+          </a>
+        </div>
+
         <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
           {/* Day 1 */}
             <div className="glass-panel rounded-2xl p-5 sm:p-8 glow-border">
