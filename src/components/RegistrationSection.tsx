@@ -99,7 +99,8 @@ interface RegistrationSectionProps {
 }
 
 const RegistrationSection = ({ selectedTier, sectionRef }: RegistrationSectionProps) => {
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error" | "duplicate">("idle");
+  const [duplicateName, setDuplicateName] = useState<{ firstName: string; lastName: string } | null>(null);
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -136,6 +137,12 @@ const RegistrationSection = ({ selectedTier, sectionRef }: RegistrationSectionPr
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...data, submittedAt: new Date().toISOString() }),
       });
+      if (res.status === 409) {
+        setDuplicateName({ firstName: data.firstName, lastName: data.lastName });
+        setStatus("duplicate");
+        form.reset();
+        return;
+      }
       if (!res.ok) throw new Error("Submission failed");
       setStatus("success");
       form.reset();
@@ -167,6 +174,24 @@ const RegistrationSection = ({ selectedTier, sectionRef }: RegistrationSectionPr
             </p>
             <Button className="mt-4 gradient-primary text-primary-foreground font-display tracking-wider rounded-full px-8" onClick={() => setStatus("idle")}>
               Submit Another
+            </Button>
+          </div>
+        ) : status === "duplicate" ? (
+          <div className="glass-panel rounded-2xl p-10 text-center flex flex-col items-center gap-4 glow-border">
+            <h3 className="text-2xl font-display font-bold">Registration Already on File</h3>
+            <p className="text-muted-foreground max-w-md">
+              We already have a registration on file for{" "}
+              <span className="text-foreground font-medium">
+                {duplicateName?.firstName} {duplicateName?.lastName}
+              </span>
+              . If you believe this is an error, please contact us at{" "}
+              <a href="mailto:contact@ssip-pl.ch" className="underline text-primary">
+                contact@ssip-pl.ch
+              </a>
+              .
+            </p>
+            <Button className="mt-4 gradient-primary text-primary-foreground font-display tracking-wider rounded-full px-8" onClick={() => setStatus("idle")}>
+              Back to Form
             </Button>
           </div>
         ) : (

@@ -19,7 +19,7 @@ export default async function handler(req: any, res: any) {
     const docs = await client
       .db('v1-production')
       .collection('event-registrations')
-      .find({ event: 'TX-2606', emailSent: false })
+      .find({ event: 'TX-2606', status: 'applied' })
       .sort({ submittedAt: 1 })
       .limit(20)
       .toArray();
