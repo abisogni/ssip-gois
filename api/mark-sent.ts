@@ -26,7 +26,7 @@ export default async function handler(req: any, res: any) {
       .collection('event-registrations')
       .updateOne(
         { registrationId },
-        { $set: { emailSent: true, notificationSent: true, status: 'invoice', processedAt: new Date() } }
+        { $set: { emailSent: true, notificationSent: true, status: 'review', processedAt: new Date() } }
       );
     return res.status(200).json({ success: true });
   } catch (err) {
