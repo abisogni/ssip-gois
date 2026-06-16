@@ -1,9 +1,12 @@
 import { lazy, Suspense } from "react";
 import ssipLogo from "@/assets/ssip-logo.png";
+import undergroundLogo from "@/assets/underground-future-lab-white.png";
+import technoparkLogo from "@/assets/sponsor-technopark.png";
 import realStation1 from "@/assets/real-station-1.png";
 import realStation2 from "@/assets/real-station-2.png";
 import rocket from "@/assets/rocket.png";
 import { Button } from "@/components/ui/button";
+import CountdownTimer from "@/components/CountdownTimer";
 
 const SpaceBackground = lazy(() => import("@/components/SpaceBackground"));
 
@@ -23,7 +26,12 @@ const HeroSection = ({ onRegisterClick }: HeroSectionProps) => {
       <img src={rocket} alt="" className="absolute bottom-[10%] right-[8%] md:bottom-[10%] md:right-[18%] w-5 sm:w-8 md:w-14 opacity-50 sm:opacity-70 animate-rocket pointer-events-none select-none" style={{ zIndex: 2, filter: 'brightness(1.1)' }} />
 
       <div className="relative z-10 text-center px-6 sm:px-8 max-w-5xl mx-auto" style={{ textShadow: '0 2px 20px hsl(220 20% 4% / 0.9), 0 4px 40px hsl(220 20% 4% / 0.7), 0 0 80px hsl(220 20% 4% / 0.5)' }}>
-        <img src={ssipLogo} alt="SSIP Logo" className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 mx-auto mb-5 sm:mb-6" />
+        <div className="flex items-center justify-center gap-3 sm:gap-5 mb-5 sm:mb-6 flex-wrap">
+          <img src={ssipLogo} alt="SSIP Logo" className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20" />
+          <div className="h-10 sm:h-12 md:h-14 w-px bg-foreground/20" />
+          <img src={undergroundLogo} alt="The Underground Future Lab" className="h-10 sm:h-12 md:h-14 w-auto object-contain" />
+          <img src={technoparkLogo} alt="Technopark Luzern" className="h-10 sm:h-12 md:h-14 w-auto object-contain brightness-0 invert" />
+        </div>
         <h1 className="text-[1.55rem] sm:text-3xl md:text-5xl lg:text-6xl font-display font-bold mb-4 sm:mb-5 md:mb-6 glow-text leading-[1.2] sm:leading-tight">
           Global Orbital Infrastructure{" "}
           <span className="text-primary">Summit&nbsp;2026</span>
@@ -32,7 +40,7 @@ const HeroSection = ({ onRegisterClick }: HeroSectionProps) => {
           Uniting Global Leaders to Shape the Future of Orbital Infrastructure
         </p>
         <p className="text-muted-foreground text-xs sm:text-sm md:text-lg mb-3 sm:mb-4">
-          Organized by <span className="text-primary font-semibold">SSIP</span>, Space Systems Innovation Platform
+          Organized by <span className="text-primary font-semibold">SSIP</span>, VSH, The Underground Future Lab and Technopark Luzern
         </p>
         <div className="flex flex-col items-center justify-center gap-1 text-muted-foreground mb-7 sm:mb-10 font-display text-[0.65rem] sm:text-xs md:text-sm tracking-wider">
           <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap justify-center">
@@ -60,6 +68,7 @@ const HeroSection = ({ onRegisterClick }: HeroSectionProps) => {
             <a href="mailto:contact@ssip-pl.ch">Contact Us</a>
           </Button>
         </div>
+        <CountdownTimer />
       </div>
     </section>
   );

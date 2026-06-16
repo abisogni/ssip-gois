@@ -6,6 +6,8 @@ import AboutSection from "@/components/AboutSection";
 import AgendaSection from "@/components/AgendaSection";
 import ThemesSection from "@/components/ThemesSection";
 import ReasonsSection from "@/components/ReasonsSection";
+import SpeakersCarousel from "@/components/SpeakersCarousel";
+import SpeakersSection from "@/components/SpeakersSection";
 import PricingSection from "@/components/PricingSection";
 import RegistrationSection from "@/components/RegistrationSection";
 import SponsorsSection from "@/components/SponsorsSection";
@@ -33,6 +35,8 @@ const Index = () => {
       <div id="agenda"><AgendaSection /></div>
       <div id="themes"><ThemesSection /></div>
       <div id="attend"><ReasonsSection /></div>
+      <SpeakersCarousel />
+      <div id="speakers"><SpeakersSection /></div>
       <PricingSection onRegisterClick={(tier) => scrollToForm(tier)} />
       <RegistrationSection selectedTier={selectedTier} sectionRef={formRef} />
       <SponsorsSection />

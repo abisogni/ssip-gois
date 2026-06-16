@@ -56,7 +56,15 @@ const PricingSection = ({ onRegisterClick }: PricingSectionProps) => {
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-center mb-3 sm:mb-4">
           Want to <span className="text-primary">Attend?</span>
         </h2>
-        <p className="text-muted-foreground text-center mb-10 sm:mb-16 text-sm sm:text-base">Choose the pass that best fits your profile.</p>
+        <p className="text-muted-foreground text-center mb-4 text-sm sm:text-base">Choose the pass that best fits your profile.</p>
+        <div className="flex justify-center mb-10 sm:mb-16">
+          <div className="inline-flex items-center gap-2.5 border border-primary/40 bg-primary/5 rounded-full px-4 py-1.5 sm:px-5 sm:py-2">
+            <span className="inline-block w-2 h-2 rounded-full bg-primary animate-pulse" />
+            <p className="text-[10px] sm:text-xs tracking-[0.2em] uppercase font-display text-foreground/90">
+              Registration closes June 16, 2026 at 23:59 CET
+            </p>
+          </div>
+        </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           {tiers.map((tier) => (
             <div

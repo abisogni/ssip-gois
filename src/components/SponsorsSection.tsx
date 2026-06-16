@@ -1,14 +1,12 @@
 import swissFibertec from "@/assets/sponsor-swiss-fibertec.png";
 import hslu from "@/assets/sponsor-hslu.jpg";
-import technopark from "@/assets/sponsor-technopark.png";
 
 const maxon = "https://res.cloudinary.com/dutcsd19r/image/upload/v1775835344/sponsor-maxon.png";
 
 const sponsors = [
-  { name: "Swiss Fibertec", logo: swissFibertec, invert: false, bg: undefined },
-  { name: "HSLU – Hochschule Luzern", logo: hslu, invert: false, bg: "#ffffff" },
-  { name: "Technopark Luzern", logo: technopark, invert: false, bg: undefined },
-  { name: "Maxon", logo: maxon, invert: false, bg: "#ffffff" },
+  { name: "Swiss Fibertec", logo: swissFibertec, invert: false },
+  { name: "HSLU, Hochschule Luzern", logo: hslu, invert: false },
+  { name: "Maxon", logo: maxon, invert: false },
 ];
 
 const SponsorsSection = () => {
@@ -25,13 +23,12 @@ const SponsorsSection = () => {
           {sponsors.map((s) => (
             <div
               key={s.name}
-              className="glass-panel glow-border-strong rounded-2xl p-6 sm:p-8 flex items-center justify-center w-[200px] sm:w-[240px] h-[100px] sm:h-[120px] transition-transform hover:scale-105 overflow-hidden"
-              style={s.bg ? { backgroundColor: s.bg } : {}}
+              className="glass-panel glow-border rounded-2xl flex items-center justify-center w-[200px] sm:w-[240px] h-[100px] sm:h-[120px] transition-transform hover:scale-105 overflow-hidden"
             >
               <img
                 src={s.logo}
                 alt={s.name}
-                className={`max-h-14 sm:max-h-16 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity ${s.invert ? "brightness-0 invert" : ""}`}
+                className={`w-full h-full object-contain p-3 sm:p-4 opacity-85 hover:opacity-100 transition-opacity ${s.invert ? "brightness-0 invert" : ""}`}
               />
             </div>
           ))}
