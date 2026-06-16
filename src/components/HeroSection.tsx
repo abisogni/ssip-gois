@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import ssipLogo from "@/assets/ssip-logo.png";
 import undergroundLogo from "@/assets/underground-future-lab-white.png";
+import vshLogo from "@/assets/vsh-logo.jpg";
 import technoparkLogo from "@/assets/sponsor-technopark.png";
 import realStation1 from "@/assets/real-station-1.png";
 import realStation2 from "@/assets/real-station-2.png";
@@ -30,6 +31,9 @@ const HeroSection = ({ onRegisterClick }: HeroSectionProps) => {
           <img src={ssipLogo} alt="SSIP Logo" className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20" />
           <div className="h-10 sm:h-12 md:h-14 w-px bg-foreground/20" />
           <img src={undergroundLogo} alt="The Underground Future Lab" className="h-10 sm:h-12 md:h-14 w-auto object-contain" />
+          <div className="rounded-md overflow-hidden h-10 sm:h-12 md:h-14 w-auto">
+            <img src={vshLogo} alt="VSH VersuchsStollen Hagerbach" className="h-full w-auto object-contain" />
+          </div>
           <img src={technoparkLogo} alt="Technopark Luzern" className="h-10 sm:h-12 md:h-14 w-auto object-contain brightness-0 invert" />
         </div>
         <h1 className="text-[1.55rem] sm:text-3xl md:text-5xl lg:text-6xl font-display font-bold mb-4 sm:mb-5 md:mb-6 glow-text leading-[1.2] sm:leading-tight">
