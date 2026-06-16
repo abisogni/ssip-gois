@@ -1,5 +1,7 @@
 import swissFibertec from "@/assets/sponsor-swiss-fibertec.png";
 import hslu from "@/assets/sponsor-hslu.jpg";
+import lucerneBusiness from "@/assets/sponsor-lucerne-business.png";
+import inventicia from "@/assets/sponsor-inventicia.png";
 
 const maxon = "https://res.cloudinary.com/dutcsd19r/image/upload/v1775835344/sponsor-maxon.png";
 
@@ -7,6 +9,8 @@ const sponsors = [
   { name: "Swiss Fibertec", logo: swissFibertec, invert: false },
   { name: "HSLU, Hochschule Luzern", logo: hslu, invert: false },
   { name: "Maxon", logo: maxon, invert: false },
+  { name: "Lucerne Business", logo: lucerneBusiness, invert: false },
+  { name: "Inventicia", logo: inventicia, invert: false },
 ];
 
 const SponsorsSection = () => {

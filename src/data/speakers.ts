@@ -1,3 +1,29 @@
+import adrianaImg from "@/assets/speakers/Adriana.png";
+import abhijitImg from "@/assets/speakers/Capt._Abhijit_Bhutey.png";
+import ecemImg from "@/assets/speakers/Ecem_Badruk.png";
+import eleonoreImg from "@/assets/speakers/Eleonore.png";
+import indraImg from "@/assets/speakers/Indra.png";
+import ivanoImg from "@/assets/speakers/Ivano.png";
+import jimImg from "@/assets/speakers/Jim_Keravala.png";
+import julienImg from "@/assets/speakers/Julien_Michels.png";
+import markusImg from "@/assets/speakers/Markus_ESDI.png";
+import annaImg from "@/assets/speakers/Prof._Anna_Moore.png";
+import nasserImg from "@/assets/speakers/Nasser.png";
+import timImg from "@/assets/speakers/Tim_Searle.png";
+import ulrichImg from "@/assets/speakers/Ulrick_Spaker.png";
+import walterImg from "@/assets/speakers/Walter.png";
+import lorenzoImg from "@/assets/speakers/Lorenzo_Benedetti.png";
+import siddharthImg from "@/assets/speakers/Siddharth_Jena.png";
+import jenniferImg from "@/assets/speakers/Jennifer_Wadsworth.png";
+import fazilImg from "@/assets/speakers/Fazil_Emre_Uslu.png";
+import simonImg from "@/assets/speakers/Simon_Wuest.png";
+import tolgaImg from "@/assets/speakers/Tolga_Ors.png";
+import berndImg from "@/assets/speakers/Bernd_Rattenbacher.png";
+import cindyImg from "@/assets/speakers/Cindy_Follonier.png";
+import magdalenaImg from "@/assets/speakers/Magdalena_Herova.png";
+import merveImg from "@/assets/speakers/Merve_Erdem_Burger.png";
+import yvonneImg from "@/assets/speakers/Yvonne_Bemelmans.png";
+
 export type SpeakerTrack =
   | "Orbital Infrastructure"
   | "Advanced Manufacturing"
@@ -17,7 +43,6 @@ export interface Speaker {
   linkedin?: string;
 }
 
-// Speaker photos need to be uploaded to /public/speakers/ and paths updated here.
 export const speakers: Speaker[] = [
   {
     slug: "adriana-gudino",
@@ -25,7 +50,7 @@ export const speakers: Speaker[] = [
     title: "Founder & Scientific Director",
     organization: "MER Root Lab",
     country: "Mexico",
-    image: "",
+    image: adrianaImg,
     tracks: ["Life Sciences"],
     bio: "Dr. Adriana Gudiño is a physician-scientist and founder of MER Root Lab, a biotechnology research platform developing advanced nutraceutical formulations for clinical use in longevity, regenerative medicine and cancer support. Her work bridges human biology and the orbital environment, translating space-derived insights into terrestrial healthcare applications.",
     session: "Life Sciences in Orbit, Biomedical Frontiers",
@@ -37,7 +62,7 @@ export const speakers: Speaker[] = [
     title: "Co-Founder & CEO",
     organization: "Inbound Aerospace",
     country: "India",
-    image: "",
+    image: abhijitImg,
     tracks: ["Orbital Infrastructure", "Strategy & Policy"],
     bio: "Capt. Abhijit Bhutey is Co-Founder and CEO of Inbound Aerospace, a venture dedicated to bringing the value of space back to Earth through orbital infrastructure and downstream applications. A seasoned operator with a global outlook, he bridges deep tech with executable commercial models.",
     session: "From Space, For Earth, Orbital Value Chains",
@@ -49,7 +74,7 @@ export const speakers: Speaker[] = [
     title: "Founder & Executive Director",
     organization: "Women in Space Biotech",
     country: "Austria",
-    image: "",
+    image: ecemImg,
     tracks: ["Life Sciences"],
     bio: "Ecem Badruk is Founder and Executive Director of Women in Space Biotech, advancing inclusive leadership at the frontier of space life sciences, biological research and long-duration human spaceflight readiness.",
     session: "Human Performance & Biology in Orbit",
@@ -61,7 +86,7 @@ export const speakers: Speaker[] = [
     title: "Senior Scientist",
     organization: "CSEM",
     country: "Switzerland",
-    image: "",
+    image: eleonoreImg,
     tracks: ["Advanced Manufacturing", "Life Sciences"],
     bio: "Dr. Eleonore Cassandra Poli is a senior scientist at CSEM working at the intersection of advanced manufacturing, microgravity research and analog astronaut programs. She brings a rare blend of hands-on research and operational readiness.",
     session: "Advanced Manufacturing in Microgravity",
@@ -73,7 +98,7 @@ export const speakers: Speaker[] = [
     title: "Founder & CEO",
     organization: "Spacephilic",
     country: "India",
-    image: "",
+    image: indraImg,
     tracks: ["Strategy & Policy", "Orbital Infrastructure"],
     bio: "Dr. Indra Narayan Chaudhary is Founder and CEO of Spacephilic, advancing emerging-nation participation in the orbital economy through outreach, education and policy engagement.",
     session: "Emerging Space Nations & Global Access",
@@ -85,7 +110,7 @@ export const speakers: Speaker[] = [
     title: "Space Business Unit Manager",
     organization: "Iazzero Tecnologie",
     country: "Italy",
-    image: "",
+    image: ivanoImg,
     tracks: ["Orbital Infrastructure", "Advanced Manufacturing"],
     bio: "Ivano Verzola is Space Business Unit Manager at Iazzero Tecnologie, leading orbital systems, autonomy and mission operations programs. He brings a European industrial perspective on the new orbital era.",
     session: "Industrialising the Orbital Economy",
@@ -97,7 +122,7 @@ export const speakers: Speaker[] = [
     title: "Co-Founder & CEO",
     organization: "OffWorld",
     country: "United States",
-    image: "",
+    image: jimImg,
     tracks: ["Advanced Manufacturing", "Orbital Infrastructure"],
     bio: "Jim Keravala is the co-founder and CEO of OffWorld, building swarms of industrial robots to work on Earth, the Moon, asteroids and Mars. A globally recognized space industry leader, he is one of the pioneers of the new space economy.",
     session: "Robotic Industrialisation Beyond Earth",
@@ -109,7 +134,7 @@ export const speakers: Speaker[] = [
     title: "Head of Research Infrastructure",
     organization: "VSH, The Underground Future Lab",
     country: "Switzerland",
-    image: "",
+    image: julienImg,
     tracks: ["Strategy & Policy"],
     bio: "Dr. Julien Michels is Head of Research Infrastructure at VSH, The Underground Future Lab, leading large-scale experimental platforms that support deep-tech research, technology transfer and industrial partnerships relevant to the orbital industrial era.",
     session: "Research Infrastructure for the Orbital Era",
@@ -121,7 +146,7 @@ export const speakers: Speaker[] = [
     title: "Program Manager",
     organization: "European Space Deep-Tech Innovation Center (PSI, ESA)",
     country: "Switzerland",
-    image: "",
+    image: markusImg,
     tracks: ["Orbital Infrastructure", "Advanced Manufacturing"],
     bio: "Dr. Markus Schoelmerich is Program Manager at the European Space Deep-Tech Innovation Center, a joint initiative between PSI and ESA, accelerating space-grade deep-tech from research to flight.",
     session: "From Lab to Orbit, Deep-Tech Acceleration",
@@ -133,7 +158,7 @@ export const speakers: Speaker[] = [
     title: "Director, Institute for Space",
     organization: "Australian National University",
     country: "Australia",
-    image: "",
+    image: annaImg,
     tracks: ["Strategy & Policy", "Orbital Infrastructure"],
     bio: "Professor Anna Moore is the Director of the Institute for Space at the Australian National University, leading national-scale space research, instrumentation and capability development.",
     session: "National Strategies for the Orbital Era",
@@ -145,7 +170,7 @@ export const speakers: Speaker[] = [
     title: "Co-Founder & CEO",
     organization: "Swiss Solar Space Company",
     country: "Switzerland",
-    image: "",
+    image: nasserImg,
     tracks: ["Orbital Infrastructure", "Strategy & Policy"],
     bio: "Dr. Nasser Hefiana is Co-Founder and CEO of Swiss Solar Space Company, developing energy and infrastructure concepts for the orbital economy with a strong focus on strategic commercialization and international collaboration.",
     session: "Energy Systems for the Orbital Economy",
@@ -157,7 +182,7 @@ export const speakers: Speaker[] = [
     title: "Director, Business Development and Partnerships",
     organization: "Innovian Space",
     country: "United States",
-    image: "",
+    image: timImg,
     tracks: ["Orbital Infrastructure", "Advanced Manufacturing"],
     bio: "Tim Searle is Director of Business Development and Partnerships at Innovian Space, leading commercial growth and strategic alliances across emerging orbital systems and infrastructure opportunities.",
     session: "Commercial Pathways for Orbital Infrastructure",
@@ -169,7 +194,7 @@ export const speakers: Speaker[] = [
     title: "Sales Director, Space Exploration",
     organization: "Starlab",
     country: "Switzerland",
-    image: "",
+    image: ulrichImg,
     tracks: ["Orbital Infrastructure"],
     bio: "Ulrich Kübler leads space exploration sales activities at Starlab, supporting the next generation of commercial low Earth orbit infrastructure and industrial partnerships.",
     session: "Commercial Stations and the Next LEO Economy",
@@ -181,7 +206,7 @@ export const speakers: Speaker[] = [
     title: "Founder & CEO",
     organization: "Tipalo",
     country: "Switzerland",
-    image: "",
+    image: walterImg,
     tracks: ["Advanced Manufacturing", "Life Sciences"],
     bio: "Walter Crismareanu is the founder of Tipalo, bringing applied AI and digital brain systems into high-value innovation environments with relevance for future orbital and biomedical applications.",
     session: "AI Systems for Advanced Space Applications",
@@ -193,7 +218,7 @@ export const speakers: Speaker[] = [
     title: "Head of Science and Technology",
     organization: "EuroTube Foundation",
     country: "Switzerland",
-    image: "",
+    image: lorenzoImg,
     tracks: ["Advanced Manufacturing", "Orbital Infrastructure"],
     bio: "Dr. Lorenzo Benedetti is Head of Science and Technology at EuroTube Foundation, driving high-speed transport and advanced infrastructure innovation, bridging deep-tech research with industrial application relevant to future orbital and terrestrial systems.",
     session: "Advanced Infrastructure and High-Velocity Systems",
@@ -205,7 +230,7 @@ export const speakers: Speaker[] = [
     title: "Founder & CEO",
     organization: "Akashalabdhi Pvt. Ltd.",
     country: "India",
-    image: "",
+    image: siddharthImg,
     tracks: ["Orbital Infrastructure", "Strategy & Policy"],
     bio: "Dr. Siddharth Jena is Founder and CEO of Akashalabdhi Pvt. Ltd., advancing India's contribution to the global orbital economy through engineering, research and international collaboration.",
     session: "Emerging Nations in the Orbital Economy",
@@ -217,7 +242,7 @@ export const speakers: Speaker[] = [
     title: "Program Manager",
     organization: "European Space Deep-Tech Innovation Centre (ESDI)",
     country: "Switzerland",
-    image: "",
+    image: jenniferImg,
     tracks: ["Life Sciences", "Strategy & Policy"],
     bio: "Dr. Jennifer Wadsworth is Program Manager at the European Space Deep-Tech Innovation Centre (ESDI), accelerating European space deep-tech innovation with a focus on astrobiology, life sciences and the translation of orbital research into industrial impact.",
     session: "European Space Deep-Tech and Life Sciences",
@@ -229,7 +254,7 @@ export const speakers: Speaker[] = [
     title: "Systems Engineer",
     organization: "Beyond Gravity",
     country: "Switzerland",
-    image: "",
+    image: fazilImg,
     tracks: ["Orbital Infrastructure", "Advanced Manufacturing"],
     bio: "Dr. Fazil Emre Uslu is a Systems Engineer at Beyond Gravity, working on advanced space systems and structures that support the next generation of orbital infrastructure and satellite platforms.",
     session: "Engineering the Next Generation of Orbital Systems",
@@ -241,7 +266,7 @@ export const speakers: Speaker[] = [
     title: "Senior Researcher, Institute of Medical Engineering",
     organization: "Lucerne School of Engineering and Architecture (HSLU)",
     country: "Switzerland",
-    image: "",
+    image: simonImg,
     tracks: ["Life Sciences"],
     bio: "Simon Wüest is a senior researcher at the Institute of Medical Engineering at the Lucerne School of Engineering and Architecture (Hochschule Luzern), working on human spaceflight, biological research and the translation of orbital experimentation into industrial value.",
     session: "Human Spaceflight and Applied Life Sciences",
@@ -253,7 +278,7 @@ export const speakers: Speaker[] = [
     title: "Managing Director",
     organization: "New Space Consulting",
     country: "United Kingdom",
-    image: "",
+    image: tolgaImg,
     tracks: ["Strategy & Policy", "Orbital Infrastructure"],
     bio: "Dr. Tolga Ors is Managing Director at New Space Consulting, advising executives, investors and institutions on strategy, innovation and growth across the orbital industrial era.",
     session: "Strategy, Innovation and the Orbital Industrial Era",
@@ -265,7 +290,7 @@ export const speakers: Speaker[] = [
     title: "Operations Manager, Biotesc",
     organization: "Biotesc, HSLU",
     country: "Switzerland",
-    image: "",
+    image: berndImg,
     tracks: ["Life Sciences", "Orbital Infrastructure"],
     bio: "Dr. Bernd Rattenbacher leads operations at Biotesc, the Hochschule Luzern user support center coordinating life sciences experiments aboard the ISS. He brings decades of expertise in orbital biological research and mission operations.",
     session: "ISS Life Sciences Operations and User Support",
@@ -277,7 +302,7 @@ export const speakers: Speaker[] = [
     title: "Life Sciences Researcher",
     organization: "SSIP",
     country: "Switzerland",
-    image: "",
+    image: cindyImg,
     tracks: ["Life Sciences"],
     bio: "Dr. Cindy Follonier contributes to Switzerland's space life sciences ecosystem, advancing biomedical research and applied experimentation relevant to long-duration human spaceflight and terrestrial healthcare translation.",
     session: "Biomedical Research for Human Spaceflight",
@@ -289,7 +314,7 @@ export const speakers: Speaker[] = [
     title: "Life Sciences Engineer, Biotesc",
     organization: "Biotesc, HSLU",
     country: "Switzerland",
-    image: "",
+    image: magdalenaImg,
     tracks: ["Life Sciences", "Advanced Manufacturing"],
     bio: "Dr. Magdalena Herova works at Biotesc, the HSLU user support center for ISS life sciences experiments, contributing to the design, integration and operation of biological payloads in orbit.",
     session: "Engineering Life Sciences Payloads for Orbit",
@@ -301,7 +326,7 @@ export const speakers: Speaker[] = [
     title: "Space Law Expert",
     organization: "Swiss Space Law Forum",
     country: "Switzerland",
-    image: "",
+    image: merveImg,
     tracks: ["Strategy & Policy"],
     bio: "Dr. Merve Erdem Burger is a space law expert with the Swiss Space Law Forum, working on the legal, regulatory and policy frameworks shaping the next orbital economy and international space governance.",
     session: "Space Law and the Orbital Economy",
@@ -313,7 +338,7 @@ export const speakers: Speaker[] = [
     title: "Master of Ceremonies, GOIS 2026",
     organization: "SSIP",
     country: "Switzerland",
-    image: "",
+    image: yvonneImg,
     tracks: ["Strategy & Policy", "Orbital Infrastructure"],
     bio: "Yvonne Bemelmans serves as Master of Ceremonies for the Global Orbital Infrastructure Summit 2026, guiding the executive program across two days. She brings senior leadership experience across the European orbital ecosystem, supporting strategic initiatives between deep-tech, industry and institutional partners.",
     session: "Master of Ceremonies, GOIS 2026 Program",
