@@ -11,11 +11,7 @@ import CountdownTimer from "@/components/CountdownTimer";
 
 const SpaceBackground = lazy(() => import("@/components/SpaceBackground"));
 
-interface HeroSectionProps {
-  onRegisterClick?: () => void;
-}
-
-const HeroSection = ({ onRegisterClick }: HeroSectionProps) => {
+const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-14 sm:pt-16 pb-20 sm:pb-24">
       <Suspense fallback={<div className="absolute inset-0 bg-background" />}>
@@ -56,13 +52,6 @@ const HeroSection = ({ onRegisterClick }: HeroSectionProps) => {
           <span className="text-[0.6rem] sm:text-xs text-muted-foreground/70 mt-0.5">In collaboration with HSLU</span>
         </div>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 max-w-md sm:max-w-none mx-auto">
-          <Button
-            size="lg"
-            className="gradient-primary text-primary-foreground font-display tracking-wider text-xs sm:text-sm px-8 sm:px-10 py-5 sm:py-6 rounded-full glow-border hover:scale-105 transition-transform w-full sm:w-auto"
-            onClick={onRegisterClick}
-          >
-            Pre-Register Now
-          </Button>
           <Button
             size="lg"
             variant="outline"

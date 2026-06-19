@@ -76,10 +76,10 @@ const CTASection = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="mt-1.5 inline-block w-2 h-2 rounded-full bg-primary animate-pulse shrink-0" />
+                  <span className="mt-1.5 inline-block w-2 h-2 rounded-full bg-muted-foreground/60 shrink-0" />
                   <div>
                     <p className="font-display text-sm sm:text-base text-foreground/90">Attendee Registration</p>
-                    <p className="text-xs sm:text-sm text-muted-foreground mt-0.5">Closes June 16, 2026 at 23:59 CET</p>
+                    <p className="text-xs sm:text-sm text-muted-foreground mt-0.5">Closed</p>
                   </div>
                 </div>
               </div>

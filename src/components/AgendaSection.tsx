@@ -1,4 +1,4 @@
-import { Calendar, Download, ExternalLink, MapPin } from "lucide-react";
+import { Calendar, Download, MapPin } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import {
@@ -285,16 +285,6 @@ const AgendaSection = () => {
 
         {/* CTAs */}
         <div className="mt-10 sm:mt-14 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
-          <Button
-            asChild
-            size="lg"
-            className="gradient-primary text-primary-foreground font-display font-semibold px-8 hover:opacity-90"
-          >
-            <a href="https://gois.ssip-pl.ch" target="_blank" rel="noopener noreferrer">
-              Register for GOIS 2026
-              <ExternalLink className="w-4 h-4 ml-2" />
-            </a>
-          </Button>
           <Button
             asChild
             size="lg"

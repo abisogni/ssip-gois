@@ -22,7 +22,7 @@ const SpeakerProfile = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navbar onRegisterClick={() => { window.location.href = "/#register"; }} />
+      <Navbar />
 
       <main className="pt-24 sm:pt-28 pb-20 px-4">
         <div className="container max-w-6xl">
