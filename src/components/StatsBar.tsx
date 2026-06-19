@@ -1,6 +1,6 @@
 const stats = [
   { value: "2", label: "Days" },
-  { value: "27", label: "Speakers" },
+  { value: "30", label: "Speakers" },
   { value: "100", label: "Attendees" },
   { value: "19", label: "Sponsors & Partners" },
   { value: "Global", label: "Participation" },

@@ -23,6 +23,12 @@ import cindyImg from "@/assets/speakers/Cindy_Follonier.png";
 import magdalenaImg from "@/assets/speakers/Magdalena_Herova.png";
 import merveImg from "@/assets/speakers/Merve_Erdem_Burger.png";
 import yvonneImg from "@/assets/speakers/Yvonne_Bemelmans.png";
+import debrajImg from "@/assets/speakers/Debraj_Dasgupta.png";
+import georgeWImg from "@/assets/speakers/George_Weinmann.png";
+import maxBGImg from "@/assets/speakers/Max_Busse_Grawitz.png";
+import marcImg from "@/assets/speakers/Marc_Biker.png";
+import jeffImg from "@/assets/speakers/Jeff_Hendrikse.png";
+import yannisImg from "@/assets/speakers/Yannis_Ailianos.png";
 
 export type SpeakerTrack =
   | "Orbital Infrastructure"
@@ -331,6 +337,78 @@ export const speakers: Speaker[] = [
     bio: "Dr. Merve Erdem Burger is a space law expert with the Swiss Space Law Forum, working on the legal, regulatory and policy frameworks shaping the next orbital economy and international space governance.",
     session: "Space Law and the Orbital Economy",
     linkedin: "https://www.linkedin.com/in/merve-erdem-burger-40800b100",
+  },
+  {
+    slug: "debraj-dasgupta",
+    name: "Debraj Dasgupta",
+    title: "Managing Director",
+    organization: "Inventicia GmbH",
+    country: "Switzerland",
+    image: debrajImg,
+    tracks: ["Life Sciences", "Strategy & Policy"],
+    bio: "Debraj Dasgupta is Managing Director of Inventicia GmbH, a Basel-based strategy consulting firm operating at the intersection of life sciences, healthcare and emerging technologies. A global healthcare leader and startup board advisor, he supports investment firms, biopharma companies and innovation ecosystems with Switzerland-based partnering opportunities.",
+    session: "Healthcare and Life Sciences in the Orbital Economy",
+    linkedin: "https://www.linkedin.com/in/debrajdasgupta",
+  },
+  {
+    slug: "george-weinmann",
+    name: "George G. Weinmann",
+    title: "Founder & CEO",
+    organization: "Astroworks Ventures & Habspace",
+    country: "United States",
+    image: georgeWImg,
+    tracks: ["Orbital Infrastructure", "Strategy & Policy"],
+    bio: "George G. Weinmann is Founder of Astroworks Ventures, developing new space and aviation businesses. He previously held senior business leadership roles at Blue Origin across Strategy, Marketing and Sales, the Space Systems Development unit and the Orbital Reef commercial station program.",
+    session: "Commercial Stations and the Next Orbital Economy",
+    linkedin: "https://www.linkedin.com/in/georgeweinmann",
+  },
+  {
+    slug: "max-busse-grawitz",
+    name: "Max Erick Busse-Grawitz",
+    title: "Technology Transfer Manager",
+    organization: "maxon",
+    country: "Switzerland",
+    image: maxBGImg,
+    tracks: ["Advanced Manufacturing", "Orbital Infrastructure"],
+    bio: "Max Erick Busse-Grawitz is Technology Transfer Manager at maxon, the Swiss precision drive systems manufacturer powering mission-critical applications across aerospace, medical technology and industrial automation, including motion systems aboard NASA Mars rovers.",
+    session: "Precision Drive Systems for Orbital and Planetary Missions",
+    linkedin: "https://www.linkedin.com/in/maxerick",
+  },
+  {
+    slug: "marc-biker",
+    name: "Marc Biker",
+    title: "Managing Director",
+    organization: "Swiss Mechatronics",
+    country: "Switzerland",
+    image: marcImg,
+    tracks: ["Advanced Manufacturing", "Orbital Infrastructure"],
+    bio: "Marc Biker represents Swiss Mechatronics, the national industry association uniting Swiss companies and research institutions advancing mechatronic systems, precision engineering and integrated manufacturing technologies across aerospace, medtech and industrial automation.",
+    session: "Swiss Mechatronics for Orbital Infrastructure",
+    linkedin: "https://www.linkedin.com/in/marcbiker",
+  },
+  {
+    slug: "jeff-hendrikse",
+    name: "Jeff Hendrikse",
+    title: "Co-Founder & CTO",
+    organization: "ATMOS",
+    country: "Germany",
+    image: jeffImg,
+    tracks: ["Orbital Infrastructure", "Advanced Manufacturing"],
+    bio: "Jeff Hendrikse represents ATMOS, advancing return capsule technologies and in-space transportation systems that enable reliable recovery of payloads from orbit, a critical capability for the emerging orbital manufacturing and life sciences economy.",
+    session: "Return Capsules and the Orbital Logistics Chain",
+    linkedin: "https://www.linkedin.com/in/jeffhendrikse",
+  },
+  {
+    slug: "yannis-ailianos",
+    name: "Yannis Ailianos",
+    title: "CEO",
+    organization: "Swiss Fibertec",
+    country: "Switzerland",
+    image: yannisImg,
+    tracks: ["Advanced Manufacturing", "Orbital Infrastructure"],
+    bio: "Yannis Ailianos represents Swiss Fibertec, a Swiss specialist in advanced fiber technologies and precision composite solutions enabling next generation aerospace, orbital infrastructure and high performance industrial applications.",
+    session: "Advanced Fiber Technologies for Orbital Infrastructure",
+    linkedin: "https://www.linkedin.com/in/yannisailianos",
   },
   {
     slug: "yvonne-bemelmans",

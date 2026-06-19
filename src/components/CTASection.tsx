@@ -47,7 +47,7 @@ const CTASection = () => {
             {/* Quiet metric row */}
             <div className="grid grid-cols-3 gap-6 sm:gap-10 border-y border-border/40 py-6 sm:py-8 mb-10 sm:mb-12">
               {[
-                { k: "27", v: "Speakers" },
+                { k: "30+", v: "Speakers" },
                 { k: "100", v: "Attendees" },
                 { k: "3", v: "Continents" },
               ].map((m) => (

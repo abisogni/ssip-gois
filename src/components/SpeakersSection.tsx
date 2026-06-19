@@ -6,8 +6,8 @@ import { Badge } from "@/components/ui/badge";
 import { speakers, TRACKS, type SpeakerTrack } from "@/data/speakers";
 
 const STATS = [
-  { value: 27, suffix: "+", label: "Speakers", Icon: Users },
-  { value: 27, suffix: "+", label: "Organizations", Icon: Building2 },
+  { value: 30, suffix: "+", label: "Speakers", Icon: Users },
+  { value: 29, suffix: "+", label: "Organizations", Icon: Building2 },
   { value: 8, suffix: "+", label: "Countries", Icon: Globe2 },
 ];
 
